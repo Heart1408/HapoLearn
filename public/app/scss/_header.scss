@@ -6,7 +6,7 @@
 nav {
   width: 100%;
 
-  ul li {
+  .header-menu-list li {
     display: inline-block;
     line-height: 80px;
 
@@ -50,7 +50,7 @@ nav {
       }
     }
 
-    ul {
+    .header-menu-list {
       flex: 5;
       display: flex;
       justify-content: flex-end;
@@ -72,7 +72,7 @@ nav {
       margin: auto;
     }
 
-    ul {
+    .header-menu-list {
       display: flex;
       width: 85%;
       max-width: 700px;
@@ -98,7 +98,7 @@ nav {
       }
     }
 
-    ul {
+    .header-menu-list {
       display: block;
       position: fixed;
       width: 100%;
@@ -107,9 +107,9 @@ nav {
       top: 70px;
       left: -100%;
       text-align: center;
-      transition: all .5s;
+      transition: all 0.5s;
       z-index: 2;
-  
+
       li {
         display: block;
         margin: 50px 0;
@@ -136,7 +136,7 @@ nav {
     content: "\f00d";
   }
 
-  #check:checked ~ div.header-menu ul{
+  #check:checked ~ div.header-menu .header-menu-list {
     left: 0;
   }
 }
