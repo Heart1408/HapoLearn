@@ -1,0 +1,53 @@
+@import url("http://fonts.cdnfonts.com/css/report");
+$color-text: #11114e;
+$brown-color: #505353;
+$theme-color: #b2d235;
+$dark-green: #72852a;
+$white: #ffffff;
+$w3-background-color: #3f6185;
+$red-color: #dc594c;
+$php-background-color: #556598;
+$css-background-color: #24abe2;
+$rails-background-color: #e14e40;
+$java-background-color: #1b75bb;
+
+$font-poppins: "Poppins", sans-serif;
+$font-utm: "Report", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@mixin button {
+  color: $white;
+  font-style: normal;
+  background-color: $theme-color;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px 0px #6f8710 inset;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+}
+
+@mixin a {
+  font-size: 14px;
+  padding: 5px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: $brown-color;
+  font-weight: bold;
+
+  &:active,
+  &:hover {
+    border-radius: 15px;
+    background: $theme-color;
+    transition: 0.2s;
+    color: $white;
+  }
+}

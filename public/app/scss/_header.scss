@@ -1,78 +1,66 @@
 .header {
   color: $brown-color;
   background-color: $white;
-}
 
-nav {
+  nav {
     width: 100%;
 
-    ul li {
-        display: inline-block;
-        line-height: 80px;
+    .header-menu-list li {
+      display: inline-block;
+      line-height: 80px;
 
-        a {
-            @include a;
-        }
+      a {
+        @include a;
+      }
     }
+  }
 }
 
-.checkbtn {
-  font-size: 25px;
-  color: $brown-color;
-  float: left;
-  line-height: 80px;
-  margin-left: 40px;
-  cursor: pointer;
-  display: none;
-}
+nav .header-menu {
+  display: flex;
 
-.check {
-  display: none;
-}
+  .logo {
+    flex: 2;
 
-@media (max-width: 2000px) {
-    nav div.header-menu {
-        display: flex;
+    div {
+      width: 260px;
+      margin: auto;
+      margin-left: 70px;
+      padding-top: 15px;
 
-        div.logo {
-            flex: 2;
-
-            div {
-                width: 260px;
-                margin: auto;
-                margin-left: 70px;
-                padding-top: 15px;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
-
-        ul {
-            flex: 5;
-            display: flex;
-            justify-content: flex-end;
-            margin-right: 70px;
-
-            li {
-              margin: 0 15px;
-            }
-        }
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
+  }
+
+  .header-menu-list {
+    flex: 5;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+
+    li {
+      margin: 0 15px;
+    }
+  }
+
+  .toggle {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
-  nav div.header-menu {
+  nav .header-menu {
     display: block;
 
-    div.logo {
+    .logo {
       width: 280px;
       margin: auto;
     }
 
-    ul {
+    .header-menu-list {
       display: flex;
       width: 85%;
       max-width: 700px;
@@ -87,56 +75,56 @@ nav {
 }
 
 @media (max-width: 650px) {
-    nav div.header-menu {
-        display: block;
-    
-        div.logo {
-            width: 240px;
-            div {
-              width: 180px;
-              padding-bottom: 20px;
-            }
-        }
+  nav div.header-menu {
+    display: block;
 
-        ul {
-            display: block;
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background: $white;
-            top: 70px;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-            z-index: 2;
-      
-            li {
-                display: block;
-                margin: 50px 0;
-                line-height: 30px;
-        
-                a {
-                    font-size: 16px;
-                }
-        
-                a:hover,
-                a.active {
-                    background: none;
-                    color: $theme-color;
-                }
-            }
-        }
+    div.logo {
+      width: 240px;
+      div {
+        width: 180px;
+        padding-bottom: 40px;
+      }
     }
 
-    .checkbtn {
+    .header-menu-list {
       display: block;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: $white;
+      top: 70px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+      z-index: 2;
+
+      li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+        a {
+          font-size: 16px;
+        }
+
+        a:hover,
+        a.active {
+          background: none;
+          color: $theme-color;
+        }
+      }
     }
 
-    #check:checked ~ label i:before {
-        content: "\f00d";
-    }
-
-    #check:checked ~ div.header-menu ul{
+    .show-menu {
       left: 0;
     }
+
+    .toggle {
+      display: block;
+      font-size: 22px;
+      margin-left: 30px;
+      margin-top: -75px;
+      margin-bottom: 20px;
+    }
+  }
 }
