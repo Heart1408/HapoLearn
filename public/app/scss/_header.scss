@@ -85,46 +85,46 @@ nav .header-menu {
         padding-bottom: 40px;
       }
     }
+  }
 
-    .header-menu-list {
+  .header-menu-list {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: $white;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 2;
+
+    li {
       display: block;
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: $white;
-      top: 70px;
-      left: -100%;
-      text-align: center;
-      transition: all 0.5s;
-      z-index: 2;
+      margin: 50px 0;
+      line-height: 30px;
 
-      li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+      a {
+        font-size: 16px;
+      }
 
-        a {
-          font-size: 16px;
-        }
-
-        a:hover,
-        a.active {
-          background: none;
-          color: $theme-color;
-        }
+      a:hover,
+      a.active {
+        background: none;
+        color: $theme-color;
       }
     }
+  }
 
-    .show-menu {
-      left: 0;
-    }
+  .show-menu {
+    left: 0;
+  }
 
-    .toggle {
-      display: block;
-      font-size: 22px;
-      margin-left: 30px;
-      margin-top: -75px;
-      margin-bottom: 20px;
-    }
+  .toggle {
+    display: block;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: -75px;
+    margin-bottom: 20px;
   }
 }
