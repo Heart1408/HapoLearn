@@ -1,5 +1,5 @@
-const menuList = document.querySelector("#header-menu-list");
-const button = document.getElementById("show-menu");
+const menuList = document.querySelector("#headerMenuList");
+const button = document.getElementById("showMenu");
 
 button.onclick = function () {
   menuList.classList.toggle("show-menu");
