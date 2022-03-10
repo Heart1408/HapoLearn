@@ -1,4 +1,4 @@
-const menuList = document.querySelector("#headerMenuList");
+const menuList = document.getElementById("headerMenuList");
 const button = document.getElementById("showMenu");
 
 button.onclick = function () {

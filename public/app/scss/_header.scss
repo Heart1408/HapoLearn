@@ -45,10 +45,10 @@ nav .header-menu {
       margin: 0 15px;
     }
   }
+}
 
-  .toggle {
-    display: none;
-  }
+.toggle {
+  display: none;
 }
 
 @media (max-width: 1024px) {
@@ -75,19 +75,20 @@ nav .header-menu {
 }
 
 @media (max-width: 650px) {
-  nav div.header-menu {
+  nav .header-menu {
     display: block;
 
-    div.logo {
+    .logo {
       width: 240px;
-      div {
+      .logo-img {
         width: 180px;
         padding-bottom: 40px;
+        margin: auto;
       }
     }
   }
 
-  .header-menu-list {
+  nav .header-menu .header-menu-list {
     display: block;
     position: fixed;
     width: 100%;
@@ -116,7 +117,7 @@ nav .header-menu {
     }
   }
 
-  .show-menu {
+  nav .header-menu .show-menu {
     left: 0;
   }
 
@@ -127,5 +128,6 @@ nav .header-menu {
     margin-top: -75px;
     margin-bottom: 20px;
     border: none;
+    background: $white;
   }
 }
