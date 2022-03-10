@@ -4,14 +4,14 @@
 
   nav {
     width: 100%;
+  }
 
-    .header-menu-list li {
-      display: inline-block;
-      line-height: 80px;
+  nav .header-menu-list li {
+    display: inline-block;
+    line-height: 80px;
 
-      a {
-        @include a;
-      }
+    a {
+      @include a;
     }
   }
 }
@@ -22,16 +22,16 @@ nav .header-menu {
   .logo {
     flex: 2;
 
-    div {
+    .logo-img {
       width: 260px;
       margin: auto;
       margin-left: 70px;
       padding-top: 15px;
+    }
 
-      img {
-        width: 100%;
-        height: 100%;
-      }
+    .logo-img img {
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -126,5 +126,6 @@ nav .header-menu {
     margin-left: 30px;
     margin-top: -75px;
     margin-bottom: 20px;
+    border: none;
   }
 }
