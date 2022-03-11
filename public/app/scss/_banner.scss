@@ -1,0 +1,109 @@
+.hapo-learn-banner {
+  background-image: url("https://s3-alpha-sig.figma.com/img/866b/63ac/1e9eca12ac0612fb7b885045132e08f8?Expires=1647820800&Signature=NhlkpIpR6qN9L7m7-pfHBq5CIZ2ouCnC5HnoqWJpGwg2X3bxKw0PwdqbD6pOVC2bkh1EZhALlq6bRzlzhi-PAkP-A2GCTYJW-LwDXss3DDreysAOAoHToqPOAvt-h6bH13-2kYc4b9gPVUbWBAZ5x-cM0-daiEht7K5elJyh26MXyyqN~lVcQKoZCkW4fk9PQZqALMNW8fAXsCFJLS3rc17Wb~Y-OJKdvCRZBZtWQCzO~7xh~moTdznh1VdqxF2U-gXam~PNA~Lxf1ixzgktPPOeX1DuZmEwbcbjjDpDdEIjApJ4stSg-KicKlNrx9Fbe5PfNY0~QXmcBKi0pCwbgA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  font-family: $font-utm;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+
+  .banner-content .title {
+    color: $color-text;
+    font-weight: normal;
+  }
+
+  .banner-content div {
+    display: flex;
+
+    > p {
+      font-weight: bolder;
+      color: $color-text;
+    }
+  }
+}
+
+.hapo-learn-banner-bottom {
+  display: block;
+  height: 80px;
+  background-image: linear-gradient(#ffffff, rgb(219, 216, 216));
+}
+
+.banner-content {
+  padding: 120px 70px;
+
+  .title {
+    font-size: 3vw;
+  }
+
+  .subtitle {
+    > p {
+      font-size: 3.5vw;
+    }
+
+    .img-hapo-icon {
+      width: 4vw;
+      height: 4vw;
+    }
+  }
+
+  .description {
+    color: $brown-color;
+    font-size: 16px;
+  }
+
+  .banner-btn {
+    padding: 8px 60px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 35px;
+    @include button;
+  }
+}
+
+@media (max-width: 950px) {
+  .banner-content {
+    padding: 80px 30px;
+
+    .banner-btn {
+      padding: 7px 45px;
+      font-size: 20px;
+      font-weight: normal;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .hapo-learn-banner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 290px;
+  }
+
+  div.banner-content {
+    position: absolute;
+    padding: 20px;
+    top: 300px;
+    width: 360px;
+    margin: 0 auto;
+
+    .title {
+      font-size: 30px;
+      margin: 0;
+    }
+
+    .subtitle {
+      > p {
+        font-size: 30px;
+        margin: 0;
+      }
+
+      .img-hapo-icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .hapo-learn-banner-bottom {
+    margin-top: 230px;
+  }
+}
