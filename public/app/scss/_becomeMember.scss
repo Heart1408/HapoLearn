@@ -1,0 +1,62 @@
+.become-member {
+  font-family: $font-utm;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 120px 0;
+
+  .title {
+    color: $white;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .become-member-btn {
+    @include button;
+    padding: 7px 40px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    color: $theme-color;
+    background-color: $white;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .become-member {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .become-member {
+    padding: 60px 0;
+
+    .title {
+      font-size: 35px;
+    }
+
+    .become-member-btn {
+      padding: 7px 35px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .become-member {
+    padding: 50px 0;
+
+    .title {
+      font-size: 30px;
+    }
+
+    .become-member-btn {
+      padding: 6px 30px;
+      font-size: 15px;
+    }
+  }
+}

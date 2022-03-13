@@ -1,0 +1,171 @@
+.footer {
+  font-family: $font-utm;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  background-color: #505353;
+  padding: 0 200px;
+}
+
+.logo {
+  order: 1;
+  margin-top: 30px;
+
+  .logo-img {
+    width: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .slogan {
+    line-height: 20px;
+    font-size: 15px;
+    margin-left: 45px;
+  }
+}
+
+.menu {
+  order: 2;
+  display: flex;
+  justify-content: center;
+
+  .menu-col {
+    padding: 35px;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: 15px;
+      display: block;
+      line-height: 30px;
+    }
+  }
+}
+
+.contact {
+  order: 3;
+  display: flex;
+  align-items: center;
+
+  .contact-logo {
+    margin: 10px;
+
+    i {
+      color: $white;
+      font-size: 20px;
+      color: #505353;
+      background-color: $white;
+      border-radius: 25px;
+    }
+
+    .fa-solid {
+      padding: 8px;
+    }
+
+    .fa-brands {
+      padding: 8px 12px;
+    }
+  }
+}
+
+.footer-bottom {
+  font-family: $font-utm;
+  background-color: #454545;
+  text-align: center;
+  color: #c9c8c8;
+  padding: 3px;
+  font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 0 120px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 0 50px;
+  }
+
+  .menu .menu-col {
+    padding: 25px;
+  }
+
+  .logo {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0 30px;
+  }
+
+  .logo {
+    margin-top: 10px;
+    .logo-img {
+      width: 160px;
+    }
+
+    .slogan {
+      font-size: 13px;
+      margin-left: 37px;
+    }
+  }
+
+  .menu .menu-col {
+    padding: 10px;
+  }
+
+  .contact .contact-logo {
+    margin: 3px;
+
+    i {
+      font-size: 15px;
+    }
+
+    .fa-solid {
+      padding: 6px;
+    }
+
+    .fa-brands {
+      padding: 6px 9px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    display: block;
+
+    .menu {
+      justify-content: space-between;
+      margin: 0 80px;
+    }
+
+    .logo {
+      display: inline-block;
+      margin: 0;
+      margin-left: 80px;
+
+      .logo-img {
+        width: 140px;
+      }
+
+      .slogan {
+        font-size: 12px;
+        margin-left: 32px;
+      }
+    }
+
+    .contact {
+      display: inline-block;
+      float: right;
+      margin-right: 50px;
+      margin-top: 10px;
+    }
+  }
+}
