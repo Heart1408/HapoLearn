@@ -4,13 +4,15 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+}
 
-  .banner-content .title {
+.banner-content {
+  .title {
     color: $color-text;
     font-weight: normal;
   }
 
-  .banner-content div {
+  div {
     display: flex;
 
     > p {

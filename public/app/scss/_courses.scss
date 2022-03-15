@@ -35,24 +35,7 @@
       background-color: $java-background-color;
     }
 
-    .course-card-logo {
-      position: relative;
-      height: 160px;
-      border-radius: 15px 15px 0 0;
-
-      .img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      .img img {
-        width: 100%;
-      }
-    }
-
-    .course-card-content .title {
+    .title {
       color: $theme-color;
       text-align: center;
       font-weight: bold;
@@ -62,7 +45,7 @@
       margin: 0;
     }
 
-    .course-card-content .content {
+    .content {
       color: $brown-color;
       padding: 0px 15px;
       text-align: center;
@@ -75,7 +58,7 @@
       -webkit-box-orient: vertical;
     }
 
-    .course-card-content button {
+    button {
       display: block;
       margin: auto;
       margin-bottom: 40px;
@@ -84,6 +67,23 @@
       border-radius: 25px;
       font-weight: bold;
       @include button;
+    }
+  }
+
+  .course-card-logo {
+    position: relative;
+    height: 160px;
+    border-radius: 15px 15px 0 0;
+
+    .img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .img img {
+      width: 100%;
     }
   }
 }
@@ -126,19 +126,19 @@
     .course-card {
       margin: 10px;
 
-      .course-card-content .title {
+      .title {
         padding-top: 15px;
         font-size: 17px;
       }
 
-      .course-card-content .content {
+      .content {
         padding: 5px 10px;
         font-size: 14px;
         line-height: 23px;
         height: 70px;
       }
 
-      .course-card-content button {
+      button {
         margin-bottom: 30px;
         padding: 4px 22px;
         font-size: 14px;
@@ -163,7 +163,7 @@
     .course-card {
       margin: 5px;
 
-      .course-card-content .content {
+      .content {
         padding: 5px;
         font-size: 14px;
       }
@@ -189,17 +189,17 @@
       margin: auto;
       margin-bottom: 40px;
 
-      .course-card-content .title {
+      .title {
         padding-top: 15px;
         font-size: 25px;
       }
 
-      .course-card-content .content {
+      .content {
         padding: 5px 20px;
         font-size: 15px;
       }
 
-      .course-card-content button {
+      button {
         padding: 5px 25px;
         font-size: 15px;
       }
