@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   font-family: $font-utm;
   color: $white;
   display: flex;
@@ -32,7 +33,7 @@
   justify-content: center;
 
   .menu-col {
-    padding: 35px;
+    padding: 40px;
 
     a {
       text-decoration: none;
@@ -41,6 +42,10 @@
       display: block;
       line-height: 30px;
     }
+  }
+
+  .menu-col:first-child {
+    padding-left: 0;
   }
 }
 
@@ -51,13 +56,19 @@
 
   .contact-logo {
     margin: 10px;
+    display: flex;
 
     i {
-      color: $white;
       font-size: 20px;
       color: #505353;
       background-color: $white;
       border-radius: 25px;
+    }
+
+    a {
+      color: $white;
+      margin-left: 5px;
+      margin-top: 3px;
     }
 
     .fa-solid {
@@ -67,7 +78,28 @@
     .fa-brands {
       padding: 8px 12px;
     }
+
+    .contact-details {
+      display: none;
+    }
+    
+    .contact-active {
+      display: block;
+    }
   }
+}
+
+.info-contact {
+  position: absolute;
+  right: 30px;
+  top: 220px;
+  background-color: #505353;
+  padding: 30px 50px 10px 50px;
+  display: none;
+}
+
+.info-contact-active {
+  display: block;
 }
 
 .footer-bottom {
@@ -162,7 +194,7 @@
     }
 
     .contact {
-      display: inline-block;
+      display: flex;
       float: right;
       margin-right: 50px;
       margin-top: 10px;
