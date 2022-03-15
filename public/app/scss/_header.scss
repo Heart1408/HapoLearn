@@ -5,14 +5,14 @@
   nav {
     width: 100%;
   }
+}
 
-  .header-menu-list li {
-    display: inline-block;
-    line-height: 80px;
+.header-menu-list li {
+  display: inline-block;
+  line-height: 80px;
 
-    a {
-      @include a;
-    }
+  a {
+    @include a;
   }
 }
 
@@ -34,16 +34,16 @@
       height: 100%;
     }
   }
+}
 
-  .header-menu-list {
-    flex: 5;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 70px;
+.header-menu-list {
+  flex: 5;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
 
-    li {
-      margin: 0 15px;
-    }
+  li {
+    margin: 0 15px;
   }
 }
 
@@ -59,17 +59,17 @@
       width: 280px;
       margin: auto;
     }
+  }
 
-    .header-menu-list {
-      display: flex;
-      width: 85%;
-      max-width: 700px;
-      margin: auto;
-      justify-content: space-between;
+  .header-menu-list {
+    display: flex;
+    width: 85%;
+    max-width: 700px;
+    margin: auto;
+    justify-content: space-between;
 
-      li {
-        margin: 0 5px;
-      }
+    li {
+      margin: 0 5px;
     }
   }
 }
@@ -88,7 +88,7 @@
     }
   }
 
-  .header-menu .header-menu-list {
+  .header-menu-list {
     display: block;
     position: fixed;
     width: 100%;
