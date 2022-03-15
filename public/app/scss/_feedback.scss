@@ -105,27 +105,27 @@
     width: 40px;
     margin-right: 35px;
   }
+}
 
-  .profile {
-    .name {
-      font-size: 22px;
-      font-weight: bold;
-      color: $color-text;
-      margin: 0;
-      line-height: 20px;
-    }
+.profile {
+  .name {
+    font-size: 22px;
+    font-weight: bold;
+    color: $color-text;
+    margin: 0;
+    line-height: 20px;
+  }
 
-    .job {
-      margin: 0;
-      color: #000000;
-      line-height: 20px;
-      font-size: 18px;
-    }
+  .job {
+    margin: 0;
+    color: #000000;
+    line-height: 20px;
+    font-size: 18px;
+  }
 
-    .rating i {
-      color: #f2c54f;
-      font-size: 14px;
-    }
+  .rating i {
+    color: #f2c54f;
+    font-size: 14px;
   }
 }
 
