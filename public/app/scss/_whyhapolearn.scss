@@ -27,16 +27,16 @@
 
   .why-hapo-learn-list {
     flex: 3;
+  }
 
-    .container {
-      width: 430px;
-      float: right;
-      padding: 0;
+  .container {
+    width: 430px;
+    float: right;
+    padding: 0;
 
-      .title {
-        font-size: 55px;
-        font-weight: bold;
-      }
+    .title {
+      font-size: 55px;
+      font-weight: bold;
     }
   }
 
@@ -63,19 +63,15 @@
     }
   }
 
-  .content {
-    .why-hapo-learn-list {
-      .container {
-        width: 380px;
+  .container {
+    width: 380px;
 
-        .title {
-          font-size: 50px;
-        }
+    .title {
+      font-size: 50px;
+    }
 
-        p {
-          font-size: 14px;
-        }
-      }
+    p {
+      font-size: 14px;
     }
 
     .img {
@@ -106,12 +102,8 @@
   }
 
   .content {
-    .why-hapo-learn-list {
-      .container {
-        .title {
-          display: none;
-        }
-      }
+    .title {
+      display: none;
     }
 
     .img {
@@ -134,13 +126,11 @@
   }
 
   .content {
-    .why-hapo-learn-list {
-      .container {
-        width: 310px;
+    .container {
+      width: 310px;
 
-        p {
-          font-size: 13px;
-        }
+      p {
+        font-size: 13px;
       }
     }
 
@@ -162,14 +152,12 @@
   .content {
     display: block;
 
-    .why-hapo-learn-list {
-      .container {
-        width: unset;
-        float: unset;
-        text-align: center;
-        p {
-          font-size: 14px;
-        }
+    .container {
+      width: unset;
+      float: unset;
+      text-align: center;
+      p {
+        font-size: 14px;
       }
     }
 

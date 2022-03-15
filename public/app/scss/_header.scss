@@ -6,7 +6,7 @@
     width: 100%;
   }
 
-  nav .header-menu-list li {
+  .header-menu-list li {
     display: inline-block;
     line-height: 80px;
 
@@ -16,7 +16,7 @@
   }
 }
 
-nav .header-menu {
+.header-menu {
   display: flex;
 
   .header-logo {
@@ -52,7 +52,7 @@ nav .header-menu {
 }
 
 @media (max-width: 1024px) {
-  nav .header-menu {
+  .header-menu {
     display: block;
 
     .header-logo {
@@ -75,7 +75,7 @@ nav .header-menu {
 }
 
 @media (max-width: 650px) {
-  nav .header-menu {
+  .header-menu {
     display: block;
 
     .header-logo {
@@ -88,7 +88,7 @@ nav .header-menu {
     }
   }
 
-  nav .header-menu .header-menu-list {
+  .header-menu .header-menu-list {
     display: block;
     position: fixed;
     width: 100%;
@@ -117,7 +117,7 @@ nav .header-menu {
     }
   }
 
-  nav .header-menu .show-menu {
+  .header-menu .show-menu {
     left: 0;
   }
 
