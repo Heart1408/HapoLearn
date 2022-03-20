@@ -1,4 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/report");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 $color-text: #11114e;
 $brown-color: #505353;
 $theme-color: #b2d235;
@@ -13,6 +14,7 @@ $java-background-color: #1b75bb;
 
 $font-poppins: "Poppins", sans-serif;
 $font-utm: "Report", sans-serif;
+$font-open-sans: "Open Sans", sans-serif;
 
 * {
   padding: 0;
@@ -28,7 +30,6 @@ $font-utm: "Report", sans-serif;
   background-color: $theme-color;
   cursor: pointer;
   border: none;
-  box-shadow: 0px 4px 4px 0px #6f8710 inset;
 
   &:hover {
     background-color: $dark-green;

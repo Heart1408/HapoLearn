@@ -4,13 +4,15 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+}
 
-  .banner-content .title {
+.banner-content {
+  .title {
     color: $color-text;
     font-weight: normal;
   }
 
-  .banner-content div {
+  div {
     display: flex;
 
     > p {
@@ -22,7 +24,7 @@
 
 .hapo-learn-banner-bottom {
   display: block;
-  height: 80px;
+  height: 120px;
   background-image: linear-gradient(#ffffff, rgb(219, 216, 216));
 }
 
@@ -54,6 +56,7 @@
     font-size: 25px;
     font-weight: bold;
     border-radius: 35px;
+    box-shadow: 0px 4px 4px 0px #6f8710 inset;
     @include button;
   }
 }
@@ -66,6 +69,19 @@
       padding: 7px 45px;
       font-size: 20px;
       font-weight: normal;
+    }
+  }
+
+  .hapo-learn-banner-bottom {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-content {
+    .banner-btn {
+      padding: 7px 40px;
+      font-size: 18px;
     }
   }
 }
@@ -101,9 +117,15 @@
         height: 40px;
       }
     }
+
+    .banner-btn {
+      padding: 8px 45px;
+      font-size: 20px;
+    }
   }
 
   .hapo-learn-banner-bottom {
     margin-top: 230px;
+    height: 80px;
   }
 }
