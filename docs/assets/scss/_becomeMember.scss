@@ -1,0 +1,75 @@
+.become-member {
+  background-image: url('https://res.cloudinary.com/derrfxjxx/image/upload/v1647077354/image_become_xyror5.png');
+  font-family: $font-utm;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 120px 0;
+
+  .title {
+    color: $white;
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+    line-height: 70px;
+  }
+
+  .become-member-btn {
+    border: none;
+    padding: 15px 55px;
+    border-radius: 60px;
+    font-size: 27px;
+    font-weight: normal;
+    color: #90AB26;
+    -webkit-text-stroke: 0.6px #9e9e22;
+    background-color: $white;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: $dark-green;
+      color: white;
+      -webkit-text-stroke: 0.6px $white;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .become-member {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .become-member {
+    padding: 60px 0;
+
+    .title {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    .become-member-btn {
+      padding: 10px 50px;
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .become-member {
+    padding: 50px 0;
+
+    .title {
+      font-size: 38px;
+      line-height: 50px;
+    }
+
+    .become-member-btn {
+      padding: 8px 40px;
+      font-size: 20px;
+    }
+  }
+}
