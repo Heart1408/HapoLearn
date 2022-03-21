@@ -35,7 +35,7 @@
     padding: 0;
 
     .title {
-      font-size: 55px;
+      font-size: 5rem;
       font-weight: bold;
     }
   }
@@ -67,11 +67,11 @@
     width: 380px;
 
     .title {
-      font-size: 50px;
+      font-size: 4.8rem;
     }
 
     p {
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .img {
@@ -95,7 +95,7 @@
 
     .active {
       display: block;
-      font-size: 42px;
+      font-size: 4rem;
       font-weight: bold;
       margin-top: 50px;
     }
@@ -127,10 +127,10 @@
 
   .content {
     .container {
-      width: 310px;
+      width: 335px;
 
       p {
-        font-size: 13px;
+        font-size: 1.2rem;
       }
     }
 
@@ -156,9 +156,6 @@
       width: unset;
       float: unset;
       text-align: center;
-      p {
-        font-size: 14px;
-      }
     }
 
     .img {

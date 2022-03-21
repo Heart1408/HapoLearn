@@ -22,7 +22,7 @@
 
   .slogan {
     line-height: 20px;
-    font-size: 15px;
+    font-size: 1.4rem;
     margin-left: 45px;
   }
 }
@@ -38,7 +38,7 @@
     a {
       text-decoration: none;
       color: $white;
-      font-size: 15px;
+      font-size: 1.4rem;
       display: block;
       line-height: 30px;
     }
@@ -95,7 +95,7 @@
   text-align: center;
   color: #c9c8c8;
   padding: 3px;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 1200px) {
@@ -130,7 +130,7 @@
     }
 
     .slogan {
-      font-size: 13px;
+      font-size: 1.2rem;
       margin-left: 37px;
     }
   }
@@ -175,7 +175,6 @@
       }
 
       .slogan {
-        font-size: 12px;
         margin-left: 5px;
       }
     }

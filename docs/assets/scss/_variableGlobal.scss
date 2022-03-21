@@ -1,5 +1,5 @@
-@import url("http://fonts.cdnfonts.com/css/report");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 $color-text: #11114e;
 $brown-color: #505353;
 $theme-color: #b2d235;
@@ -13,8 +13,8 @@ $rails-background-color: #e14e40;
 $java-background-color: #1b75bb;
 
 $font-poppins: "Poppins", sans-serif;
-$font-utm: "Report", sans-serif;
 $font-open-sans: "Open Sans", sans-serif;
+$font-utm: 'Varela Round', sans-serif;
 
 * {
   padding: 0;

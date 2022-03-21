@@ -9,16 +9,16 @@
   .title {
     color: $white;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 5rem;
     text-align: center;
     line-height: 70px;
   }
 
   .become-member-btn {
     border: none;
-    padding: 15px 55px;
+    padding: 13px 55px;
     border-radius: 60px;
-    font-size: 27px;
+    font-size: 2.5rem;
     font-weight: normal;
     color: #90AB26;
     -webkit-text-stroke: 0.6px #9e9e22;
@@ -47,13 +47,13 @@
     padding: 60px 0;
 
     .title {
-      font-size: 50px;
-      line-height: 60px;
+      font-size: 3.7rem;
+      line-height: 50px;
     }
 
     .become-member-btn {
-      padding: 10px 50px;
-      font-size: 25px;
+      padding: 8px 50px;
+      font-size: 2.1rem;
     }
   }
 }
@@ -63,13 +63,13 @@
     padding: 50px 0;
 
     .title {
-      font-size: 38px;
+      font-size: 3.2rem;
       line-height: 50px;
     }
 
     .become-member-btn {
       padding: 8px 40px;
-      font-size: 20px;
+      font-size: 1.7rem;
     }
   }
 }

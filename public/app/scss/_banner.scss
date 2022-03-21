@@ -52,8 +52,8 @@
   }
 
   .banner-btn {
-    padding: 8px 60px;
-    font-size: 25px;
+    padding: 10px 60px;
+    font-size: 2.3rem;
     font-weight: bold;
     border-radius: 35px;
     box-shadow: 0px 4px 4px 0px #6f8710 inset;
@@ -102,13 +102,14 @@
     margin: 0 auto;
 
     .title {
-      font-size: 30px;
+      font-size: 2.7rem;
+      letter-spacing: -0.05em;
       margin: 0;
     }
 
     .subtitle {
       > p {
-        font-size: 30px;
+        font-size: 3rem;
         margin: 0;
       }
 
@@ -120,7 +121,8 @@
 
     .banner-btn {
       padding: 8px 45px;
-      font-size: 20px;
+      font-size: 1.9rem;
+      letter-spacing: -0.05em;
     }
   }
 

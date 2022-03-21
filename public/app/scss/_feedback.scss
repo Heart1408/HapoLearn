@@ -5,12 +5,12 @@
 
 .feedback-title {
   p {
-    font-size: 55px;
+    font-size: 5rem;
     color: $color-text;
     border-bottom: 4px solid $theme-color;
     font-weight: bold;
     line-height: 65px;
-    width: 225px;
+    width: 235px;
     margin: auto;
   }
 }
@@ -110,7 +110,7 @@
 
 .profile {
   .name {
-    font-size: 22px;
+    font-size: 2rem;
     font-weight: bold;
     color: $color-text;
     margin: 0;
@@ -121,12 +121,12 @@
     margin: 0;
     color: #000000;
     line-height: 20px;
-    font-size: 18px;
+    font-size: 1.7rem;
   }
 
   .rating i {
     color: #f2c54f;
-    font-size: 14px;
+    font-size: 1.3rem;
   }
 }
 
@@ -137,7 +137,7 @@
 
   .feedback-title {
     p {
-      font-size: 45px;
+      font-size: 4rem;
       line-height: 50px;
       width: 185px;
     }
@@ -151,7 +151,7 @@
 
   .feedback-title {
     p {
-      font-size: 40px;
+      font-size: 3.5rem;
       width: 165px;
     }
   }
@@ -161,6 +161,6 @@
     margin: auto;
     text-align: center;
     padding: 15px;
-    font-size: 15px;
+    font-size: 1.4rem;
   }
 }
