@@ -7,45 +7,56 @@
   width: 100%;
   font-family: $font-utm;
   display: none;
+
+  .popup-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 32%;
+    min-width: 340px;
+    max-width: 430px;
+  }
 }
 
 .active-form {
   display: block;
-  transition: 0.4;
 }
 
 .form {
   position: relative;
   background-color: $white;
-  width: 340px;
-  margin: auto;
-  margin-top: 100px;
 
   .close-form {
     position: absolute;
     border: none;
-    font-size: 1.7rem;
-    border-radius: 25px;
     background-color: $theme-color;
     color: $white;
-    right: -8px;
-    top: -8px;
-
-    i {
-      padding: 4px 8px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    font-size: 3rem;
+    right: -15px;
+    top: -15px;
   }
 
   .form-header {
     display: flex;
+
     button {
       flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border: 1px solid $theme-color;
       background-color: $white;
       color: $theme-color;
       font-weight: bold;
-      padding: 8px;
-      font-size: 15px;
+      font-size: 2.4rem;
+      height: 70px;
     }
   
     .active {
@@ -56,33 +67,36 @@
 }
 
 .form-container {
-  width: 85%;
+  width: 87%;
   margin: auto;
 
   .textfield {
     display: block;
     color: $brown-color;
-    font-size: 1.3rem;
     font-weight: bold;
     font-style: normal;
-    margin-top: 15px;
+    font-size: 1.8rem;
+    margin-top: 30px;
   }
 
   input[type=text],
   input[type=password] {
+    display: flex;
+    justify-content: center;
     width: 100%;
     border: 1px solid #E1E1E1;
     background-color: #F2F2F2;
     outline: none;
-    text-indent: 8px;
-    padding: 5px;
+    text-indent: 12px;
+    font-size: 2.2rem;
+    height: 60px;
   }
 
   .roww {
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
-    font-size: 1.3rem;
+    margin-top: 13px;
+    font-size: 1.6rem;
 
     a {
       color: $theme-color;
@@ -93,7 +107,7 @@
     position: relative;
     padding-left: 22px;
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: $brown-color;
 
     input {
@@ -114,7 +128,7 @@
 
     .checkmark {
       position: absolute;
-      top: 2px;
+      top: 3px;
       left: 0;
       height: 15px;
       width: 15px;
@@ -137,65 +151,70 @@
   }
 
   .submit-form-btn {
-    font-size: 1.2rem;
-    padding: 6px 55px;
-    border-radius: 25px;
     display: block;
     margin: auto;
-    margin-top: 25px;
-    margin-bottom: 10px;
+    font-weight: bold;
     box-shadow: 0px 2px 2px 0px #6f8710 inset;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    height: 42px;
+    width: 205px;
     @include button;
   }
 
   .line {
     border-bottom: 1px solid #DBDBDB;
-    margin-top: 20px;
+    margin: 0 -7%;
   }
 
   .login-width {
-    width: 80px;
+    width: 110px;
     text-align: center;
     margin: auto;
     margin-top: -12px;
     margin-bottom: 20px;
     color: $brown-color;
     background-color: $white;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 
   .login-width-gg-btn,
   .login-width-fb-btn {
-    display: inline-block;
-    width: 100%;
-    height: 38px;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     color: $white;
-    font-size: 14px;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
 
     i {
-      font-size: 20px;
-      padding: 0 10px;
+      font-size: 3.2rem;
+      padding-right: 8px;
     }
   }
 
   .login-width-gg-btn {
     background-color: #DC4E41;
+    margin-top: 25px;
 
     &:hover {
       background-color: #b13d32;
-      font-size: 16px;
+      font-size: 1.7rem;
     }
   }
 
   .login-width-fb-btn {
+    display: inline;
     background-color: #3B5999;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 
     &:hover {
       background-color: #29437b;
-      font-size: 16px;
+      font-size: 1.7rem;
     }
   }
 
@@ -206,4 +225,175 @@
 
 .register-form {
   display: none;
+}
+
+@media (max-width: 1500px) {
+  .form {
+    .close-form {
+      width: 35px;
+      height: 35px;
+      font-size: 2.5rem;
+      right: -12px;
+      top: -12px;
+    }
+  
+    .form-header {
+      button {
+        font-size: 1.9rem;
+        height: 50px;
+      }
+    }
+  }
+
+  .form-container {
+    .textfield {
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+  
+    input[type=text],
+    input[type=password] {
+      text-indent: 10px;
+      font-size: 1.8rem;
+      height: 45px;
+    }
+  
+    .roww {
+      margin-top: 10px;
+      font-size: 1.5rem;
+    }
+  
+    .remember-me {
+      font-size: 1.4rem;
+  
+      .checkmark {
+        top: 2px;
+      }
+    }
+  
+    .submit-form-btn {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      height: 35px;
+      width: 180px;
+    }
+  
+    .login-width {
+      width: 90px;
+      font-size: 1.5rem;
+    }
+  
+    .login-width-gg-btn,
+    .login-width-fb-btn {
+      height: 45px;
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+  
+      i {
+        font-size: 2.6rem;
+        padding-right: 8px;
+      }
+    }
+  
+    .login-width-gg-btn {
+      margin-top: 20px;
+  
+      &:hover {
+        font-size: 1.6rem;
+      }
+    }
+  
+    .login-width-fb-btn {
+      margin-bottom: 35px;
+  
+      &:hover {
+        font-size: 1.6rem;
+      }
+    }
+  
+    .form-bottom {
+      height: 10px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .form {
+    .close-form {
+      width: 30px;
+      height: 30px;
+      font-size: 2rem;
+      right: -10px;
+      top: -10px;
+    }
+  
+    .form-header {
+      button {
+        font-size: 1.6rem;
+        height: 45px;
+      }
+    }
+  }
+
+  .form-container {
+    .textfield {
+      font-size: 1.4rem;
+      margin-top: 15px;
+    }
+  
+    input[type=text],
+    input[type=password] {
+      font-size: 1.6rem;
+      height: 40px;
+    }
+  
+    .roww {
+      margin-top: 8px;
+      font-size: 1.2rem;
+    }
+  
+    .submit-form-btn {
+      margin-top: 15px;
+      font-size: 1.4rem;
+      height: 32px;
+      width: 160px;
+    }
+  
+    .login-width {
+      width: 85px;
+      font-size: 1.4rem;
+    }
+  
+    .login-width-gg-btn,
+    .login-width-fb-btn {
+      height: 38px;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+  
+      i {
+        font-size: 2.4rem;
+        padding-right: 6px;
+      }
+    }
+  
+    .login-width-gg-btn {
+      margin-top: -5px;
+      &:hover {
+        font-size: 1.5rem;
+      }
+    }
+  
+    .login-width-fb-btn {
+      margin-bottom: 30px;
+  
+      &:hover {
+        font-size: 1.5rem;
+      }
+    }
+  
+    .form-bottom {
+      height: 10px;
+    }
+  }
 }

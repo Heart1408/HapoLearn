@@ -1,19 +1,19 @@
 .why-hapo-learn {
-  background-image: url("https://s3-alpha-sig.figma.com/img/c558/56f1/074a76c0613b7249fa2847b58b2160cd?Expires=1647820800&Signature=D4h8p4Fp1bXnsCEMB20API6aUomP8uE6v2u9xM-Sfj0tAH69oIBZES95JuT8u2y80aupUbcEcNokObgzQj~ifbT6Ny-TLlX0NfVnJ1BD8zVYW90w52fpwevvjMOcGiQNkw1yqtzoCxF6orfOWbm-W2MBEoaHTNQ0DhztfWjLN1HSebcQcKtWYuaulfYkuL2-BZZNyl5wNDqO~nuosdHsB3ILLOhCwDFy1CAPGgBYWWcBKwal7Aw8AN1v~6utg4gYqdv1gbcE2fIWG1pz~6OM4JaI8rX-oDqd7yVaBcWFfxq1rnwmFeqHp6ktl4rX0BCu4Uo5pi73TM0YZy-s8SamBQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
-  margin-top: 80px;
+  position: relative;
+  background-image: url("https://scontent.fhan2-2.fna.fbcdn.net/v/t1.15752-9/275312003_515162936787208_5903099052690634795_n.png?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_ohc=RXevyYDMsQUAX9HCTbn&_nc_ht=scontent.fhan2-2.fna&oh=03_AVI7gvcchACHxy37igOa4GH5vnjkl55BdsLfF1F6JUt7iQ&oe=625FADF0");
+  margin-top: 100px;
   font-family: $font-utm;
   color: $white;
 }
 
 .why-hapo-learn-top {
+  position: absolute;
   .top-img {
     width: 400px;
 
     img {
-      margin-top: -135px;
-      margin-left: -95px;
+      margin-top: -215px;
       width: 100%;
-      transform: rotate(17.12deg);
     }
   }
 
@@ -24,26 +24,42 @@
 
 .content {
   display: flex;
+  align-items: center;
+  height: 700px;
 
   .why-hapo-learn-list {
-    flex: 3;
+    flex: 5;
   }
 
   .container {
-    width: 430px;
+    width: 500px;
     float: right;
     padding: 0;
+    margin-top: 200px;
 
     .title {
-      font-size: 5rem;
+      font-size: 6rem;
       font-weight: bold;
+      color: $white;
+    }
+
+    p {
+      font-size: 1.8rem;
+      letter-spacing: -0.05em;
+      padding-top: 20px;
+      color: rgb(196, 194, 193);
+    }
+
+    i {
+      font-size: 1.9rem;
+      padding-right: 5px;
+      color: rgb(242, 242, 242);
     }
   }
 
   .img {
+    flex: 6;
     width: 100%;
-    flex: 4;
-    margin-top: -250px;
 
     img {
       width: 100%;
@@ -54,28 +70,33 @@
 @media (max-width: 1300px) {
   .why-hapo-learn-top {
     .top-img {
-      width: 360px;
-
+      width: 370px;
+  
       img {
-        margin-top: -125px;
-        margin-left: -80px;
+        margin-top: -200px;
       }
     }
   }
+  
+  .content {
+    height: 600px;
 
-  .container {
-    width: 380px;
-
-    .title {
-      font-size: 4.8rem;
+    .container {
+      width: 450px;
+      margin-top: 180px;
+  
+      .title {
+        font-size: 5.2rem;
+      }
+  
+      p {
+        font-size: 1.5rem;
+        padding-top: 10px;
+      }
     }
-
-    p {
-      font-size: 13px;
-    }
-
+  
     .img {
-      margin-top: -200px;
+      flex: 5;
     }
   }
 }
@@ -85,30 +106,40 @@
     display: flex;
 
     .top-img {
-      width: 300px;
+      width: 280px;
 
       img {
-        margin-top: -105px;
-        margin-left: -65px;
+        margin-top: -152px;
       }
     }
 
     .active {
       display: block;
-      font-size: 4rem;
+      font-size: 5rem;
       font-weight: bold;
       margin-top: 50px;
     }
   }
 
   .content {
-    .title {
-      display: none;
+    height: 420px;
+
+    .container {
+      width: 400px;
+
+      .title {
+        display: none;
+      }
+
+      p {
+        font-size: 1.4rem;
+        padding-top: 7px;
+      }
     }
 
     .img {
-      flex: 3;
-      margin-top: -50px;
+      flex: 4;
+      margin-top: 180px;
     }
   }
 }
@@ -116,32 +147,51 @@
 @media (max-width: 768px) {
   .why-hapo-learn-top {
     .top-img {
-      width: 250px;
+      width: 260px;
 
       img {
-        margin-top: -90px;
-        margin-left: -55px;
+        margin-top: -142px;
       }
+    }
+
+    .active {
+      font-size: 4.2rem;
     }
   }
 
   .content {
+    height: 370px;
+
     .container {
-      width: 335px;
+      width: 350px;
+      margin-top: 150px;
+
+      .title {
+        font-size: 4rem;
+      }
 
       p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        padding-top: 5px;
       }
     }
 
     .img {
-      margin-top: -25px;
+      margin-top: 150px;
     }
   }
 }
 
 @media (max-width: 650px) {
   .why-hapo-learn-top {
+    .top-img {
+      width: 240px;
+
+      img {
+        margin-top: -130px;
+      }
+    }
+
     .active {
       width: 300px;
       margin-top: 5px;
@@ -150,17 +200,21 @@
   }
 
   .content {
-    display: block;
+      flex-direction: column;
+      height: 600px;
 
     .container {
-      width: unset;
-      float: unset;
       text-align: center;
+
+      i {
+        font-size: 1.8rem;
+      }
     }
 
     .img {
-      width: 400px;
+      width: 380px;
       margin: auto;
+      margin-top: -40px;
     }
   }
 }

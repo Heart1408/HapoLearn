@@ -1,9 +1,11 @@
 .header {
-  color: $brown-color;
+  color: #505353;
   background-color: $white;
+  height: 138px;
 
   nav {
     width: 100%;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
   }
 }
 
@@ -18,32 +20,38 @@
 
 .header-menu {
   display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  height: 130px;
 
   .header-logo {
-    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .logo-img {
       width: 260px;
-      margin: auto;
-      margin-left: 70px;
-      padding-top: 15px;
     }
 
     .logo-img img {
       width: 100%;
-      height: 100%;
     }
   }
 }
 
 .header-menu-list {
-  flex: 5;
   display: flex;
-  justify-content: flex-end;
-  margin-right: 70px;
+  justify-content: center;
+  align-items: center;
 
   li {
-    margin: 0 15px;
+    margin: 0 10px;
+  }
+
+  .active-menu {
+    background-color: $theme-color;
+    color: $white;
   }
 }
 
@@ -64,12 +72,11 @@
   .header-menu-list {
     display: flex;
     width: 85%;
-    max-width: 700px;
     margin: auto;
     justify-content: space-between;
 
     li {
-      margin: 0 5px;
+      margin: unset;
     }
   }
 }
@@ -77,14 +84,13 @@
 @media (max-width: 650px) {
   .header-menu {
     display: block;
+    height: 75px;
 
     .header-logo {
-      width: 240px;
-
       .logo-img {
         width: 180px;
-        padding-bottom: 60px;
         margin: auto;
+        margin-top: 15px;
       }
     }
   }
@@ -107,11 +113,11 @@
       line-height: 30px;
 
       a {
-        font-size: 16px;
+        font-size: 15px;
       }
 
       a:hover,
-      a.active {
+      a.active-menu {
         background: none;
         color: $theme-color;
       }
@@ -125,8 +131,7 @@
   .toggle {
     display: block;
     font-size: 22px;
-    margin: -95px 0 0 30px;
-    padding-bottom: 22px;
+    margin-top: -30px;
     border: none;
     background: $white;
   }

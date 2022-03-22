@@ -1,26 +1,28 @@
 .feedback {
   font-family: $font-utm;
-  margin: 50px;
+  margin: 50px 0;
 }
 
 .feedback-title {
   p {
-    font-size: 5rem;
+    font-size: 6.8rem;
     color: $color-text;
-    border-bottom: 4px solid $theme-color;
+    border-bottom: 6px solid $theme-color;
     font-weight: bold;
-    line-height: 65px;
-    width: 235px;
+    line-height: 100px;
+    width: 320px;
     margin: auto;
   }
 }
 
 .feedback-desc {
-  width: 480px;
+  color: $brown-color;
   margin: auto;
   text-align: center;
-  padding: 15px;
-  font-size: 16px;
+  width: 65%;
+  min-width: 400px;
+  padding: 35px;
+  font-size: 2.4rem;
 }
 
 .slick-initialized {
@@ -34,7 +36,7 @@
 
   .slick-arrow {
     position: absolute;
-    top: 50px;
+    top: 70px;
     border: none;
     z-index: 2;
     border-radius: 50px;
@@ -49,7 +51,8 @@
 }
 
 .slick-slider {
-  margin: 0 50px;
+  width: 90%;
+  margin: auto;
 
   .slick-item {
     margin: 10px;
@@ -67,13 +70,13 @@
     border-left: 5px solid #d9dadc;
     margin: 20px;
     margin-right: 0;
-    height: 102px;
+    height: 110px;
   }
 
   p {
     color: #000000;
     font-weight: normal;
-    margin: 20px;
+    margin: 25px 15px 50px 20px;
     padding-top: 12px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -90,17 +93,17 @@
   position: absolute;
   height: 0px;
   width: 0px;
-  top: 142px;
+  top: 160px;
   left: 30px;
-  border-width: 12px;
+  border-width: 14px;
   border-color: rgb(202, 200, 200) transparent transparent transparent;
   border-style: solid;
 }
 
 .slick-item-down {
   display: flex;
-  margin: 30px 0;
-  margin-left: 35px;
+  margin: 25px 0;
+  margin-left: 30px;
 
   .avatar {
     width: 40px;
@@ -110,7 +113,8 @@
 
 .profile {
   .name {
-    font-size: 2rem;
+    font-size: 1.9rem;
+    letter-spacing: -0.05em;
     font-weight: bold;
     color: $color-text;
     margin: 0;
@@ -121,7 +125,7 @@
     margin: 0;
     color: #000000;
     line-height: 20px;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   .rating i {
@@ -132,15 +136,22 @@
 
 @media (max-width: 1024px) {
   .feedback {
-    margin: 30px 20px;
+    margin: 50px 20px;
   }
 
   .feedback-title {
     p {
-      font-size: 4rem;
-      line-height: 50px;
-      width: 185px;
+      font-size: 4.8rem;
+      line-height: 63px;
+      width: 225px;
+      border-bottom: 4px solid $theme-color;
     }
+  }
+
+  .feedback-desc {
+    width: 80%;
+    padding: 20px;
+    font-size: 1.6rem;
   }
 }
 
@@ -151,8 +162,10 @@
 
   .feedback-title {
     p {
-      font-size: 3.5rem;
-      width: 165px;
+      font-size: 3.9rem;
+      line-height: 58px;
+      border-bottom: 3px solid $theme-color;
+      width: 180px;
     }
   }
 
@@ -162,5 +175,22 @@
     text-align: center;
     padding: 15px;
     font-size: 1.4rem;
+  }
+
+  .slick-item-content {
+    .line {
+      margin: 20px;
+      margin-right: 0;
+      height: 100px;
+    }
+  
+    p {
+      margin: 20px 15px 40px 20px;
+      font-size: 1.4rem;
+    }
+  }
+
+  .slick-item-content::after {
+    top: 145px;
   }
 }

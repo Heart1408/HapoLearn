@@ -25,11 +25,15 @@ $font-utm: 'Varela Round', sans-serif;
 }
 
 @mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: $white;
   font-style: normal;
   background-color: $theme-color;
   cursor: pointer;
   border: none;
+  border-radius: 100px;
 
   &:hover {
     background-color: $dark-green;
@@ -37,18 +41,17 @@ $font-utm: 'Varela Round', sans-serif;
 }
 
 @mixin a {
-  font-size: 14px;
-  padding: 5px 13px;
-  border-radius: 3px;
+  font-size: 1.3rem;
+  padding: 9px 17px;
+  border-radius: 50px;
   text-decoration: none;
   color: $brown-color;
   font-weight: bold;
 
   &:active,
   &:hover {
-    border-radius: 15px;
     background: $theme-color;
-    transition: 0.2s;
+    transition: 0.1s;
     color: $white;
   }
 }

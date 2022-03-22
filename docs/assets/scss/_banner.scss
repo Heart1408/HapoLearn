@@ -1,5 +1,5 @@
 .hapo-learn-banner {
-  background-image: url("https://s3-alpha-sig.figma.com/img/866b/63ac/1e9eca12ac0612fb7b885045132e08f8?Expires=1647820800&Signature=NhlkpIpR6qN9L7m7-pfHBq5CIZ2ouCnC5HnoqWJpGwg2X3bxKw0PwdqbD6pOVC2bkh1EZhALlq6bRzlzhi-PAkP-A2GCTYJW-LwDXss3DDreysAOAoHToqPOAvt-h6bH13-2kYc4b9gPVUbWBAZ5x-cM0-daiEht7K5elJyh26MXyyqN~lVcQKoZCkW4fk9PQZqALMNW8fAXsCFJLS3rc17Wb~Y-OJKdvCRZBZtWQCzO~7xh~moTdznh1VdqxF2U-gXam~PNA~Lxf1ixzgktPPOeX1DuZmEwbcbjjDpDdEIjApJ4stSg-KicKlNrx9Fbe5PfNY0~QXmcBKi0pCwbgA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-image: url("https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/273808183_699100118119024_6518370349122794635_n.png?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_ohc=dzK-5HX1O-4AX8vLNvh&_nc_ht=scontent.fhan2-3.fna&oh=03_AVKIPfJP8eXv3dq9rGg2teIM49674YdYEr1WW3CDN3Y1ng&oe=625F4D52");
   font-family: $font-utm;
   background-repeat: no-repeat;
   background-position: right;
@@ -32,7 +32,8 @@
   padding: 120px 70px;
 
   .title {
-    font-size: 3vw;
+    font-size: 3.2vw;
+    line-height: 30px;
   }
 
   .subtitle {
@@ -48,16 +49,28 @@
 
   .description {
     color: $brown-color;
-    font-size: 16px;
+    font-size: 1.8rem;
   }
 
   .banner-btn {
-    padding: 10px 60px;
-    font-size: 2.3rem;
+    height: 70px;
+    width: 360px;
+    margin-top: 30px;
+    font-size: 2.4rem;
     font-weight: bold;
-    border-radius: 35px;
     box-shadow: 0px 4px 4px 0px #6f8710 inset;
     @include button;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner-content {
+    .banner-btn {
+      height: 65px;
+      width: 330px;
+      font-size: 2.3rem;
+      margin-top: 25px;
+    }
   }
 }
 
@@ -66,9 +79,9 @@
     padding: 80px 30px;
 
     .banner-btn {
-      padding: 7px 45px;
-      font-size: 20px;
-      font-weight: normal;
+      height: 60px;
+      width: 300px;
+      font-size: 2.1rem;
     }
   }
 

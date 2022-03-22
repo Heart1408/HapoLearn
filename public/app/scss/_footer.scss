@@ -1,19 +1,26 @@
 .footer {
   position: relative;
   font-family: $font-utm;
-  color: $white;
-  display: flex;
-  justify-content: space-between;
   background-color: #505353;
-  padding: 0 200px;
+  height: 270px;
+
+  .footer-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .logo {
   order: 1;
-  margin-top: 30px;
+  margin-top: -30px;
 
   .logo-img {
-    width: 200px;
+    width: 260px;
 
     img {
       width: 100%;
@@ -21,31 +28,33 @@
   }
 
   .slogan {
+    color:#b9bdbd;
     line-height: 20px;
-    font-size: 1.4rem;
-    margin-left: 45px;
+    font-size: 1.8rem;
+    margin-left: 55px;
+    margin-top: 10px;
+    font-weight: normal;
+    letter-spacing: -0.05em;
+    line-height: 25px;
   }
 }
 
 .menu {
   order: 2;
   display: flex;
-  justify-content: center;
 
   .menu-col {
-    padding: 40px;
-
     a {
       text-decoration: none;
       color: $white;
-      font-size: 1.4rem;
+      font-size: 1.7rem;
       display: block;
-      line-height: 30px;
+      line-height: 45px;
     }
   }
 
   .menu-col:first-child {
-    padding-left: 0;
+    margin-right: 100px;
   }
 }
 
@@ -55,28 +64,26 @@
   align-items: center;
 
   .contact-logo {
-    margin: 10px;
     display: flex;
+    margin-left: 40px;
 
     i {
-      font-size: 20px;
+      font-size: 28px;
       color: #505353;
       background-color: $white;
-      border-radius: 25px;
+      border-radius: 50px;
     }
 
     a {
       color: $white;
-      margin-left: 5px;
-      margin-top: 3px;
     }
 
     .fa-solid {
-      padding: 8px;
+      padding: 10px;
     }
 
     .fa-brands {
-      padding: 8px 12px;
+      padding: 10px 16px;
     }
 
     .contact-details {
@@ -94,75 +101,132 @@
   background-color: #454545;
   text-align: center;
   color: #c9c8c8;
-  padding: 3px;
-  font-size: 1.2rem;
-}
-
-@media (max-width: 1200px) {
-  .footer {
-    padding: 0 120px;
-  }
+  padding: 10px;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 1024px) {
   .footer {
-    padding: 0 50px;
+    height: 240px;
   }
-
-  .menu .menu-col {
-    padding: 25px;
-  }
-
+  
   .logo {
-    margin-top: 18px;
+    margin-top: -60px;
+  
+    .logo-img {
+      width: 200px;
+    }
+  
+    .slogan {
+      font-size: 1.4rem;
+      margin-left: 8px;
+      margin-top: 10px;
+      line-height: 20px;
+      letter-spacing: unset;
+    }
   }
+  
+  .menu {
+    .menu-col {
+      a {
+        font-size: 1.6rem;
+        line-height: 42px;
+      }
+    }
+  
+    .menu-col:first-child {
+      margin-right: 40px;
+    }
+  }
+  
+  .contact {
+    .contact-logo {
+      margin-left: 20px;
+  
+      i {
+        font-size: 25px;
+      }
+  
+      .fa-solid {
+        padding: 8px;
+      }
+  
+      .fa-brands {
+        padding: 8px 13px;
+      }
+    }
+  }  
 }
 
 @media (max-width: 768px) {
   .footer {
-    padding: 0 30px;
-  }
-
-  .logo {
-    margin-top: 10px;
-    .logo-img {
-      width: 160px;
+    height: 235px;
+  
+    .footer-container {
+      width: 90%;
     }
-
+  }
+  
+  .logo {
+    .logo-img {
+      width: 180px;
+    }
+  
     .slogan {
       font-size: 1.2rem;
-      margin-left: 37px;
     }
   }
-
-  .menu .menu-col {
-    padding: 10px;
+  
+  .menu {
+    .menu-col {
+      a {
+        font-size: 1.4rem;
+        line-height: 40px;
+      }
+    }
+  
+    .menu-col:first-child {
+      margin-right: 28px;
+    }
   }
-
-  .contact .contact-logo {
-    margin: 3px;
-
-    i {
-      font-size: 15px;
+  
+  .contact {
+    .contact-logo {
+      margin-left: 10px;
+  
+      i {
+        font-size: 20px;
+      }
+  
+      .fa-brands {
+        padding: 8px 12px;
+      }
     }
-
-    .fa-solid {
-      padding: 6px;
-    }
-
-    .fa-brands {
-      padding: 6px 9px;
-    }
+  } 
+  
+  .footer-bottom {
+    padding: 8px;
+    font-size: 1.2rem;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 570px) {
   .footer {
-    display: block;
+    height: 350px;
+    
+    .footer-container {
+      display: block;
+    }
 
     .menu {
       justify-content: space-between;
-      margin: 0 20%;
+      margin: 30px 20%;
+      padding-top: 20px;
+
+      a {
+        font-size: 1.6rem;
+        line-height: 45px;
+      }
     }
 
     .logo {
@@ -171,19 +235,14 @@
       margin-left: 20%;
 
       .logo-img {
-        width: 140px;
-      }
-
-      .slogan {
-        margin-left: 5px;
+        width: 165px;
       }
     }
 
     .contact {
       display: flex;
       float: right;
-      margin-right: 50px;
-      margin-top: 10px;
+      margin-right: 10px;
     }
   }
 }
