@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css2?family=Varela+Round&display=swap);
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -840,15 +841,18 @@
 }
 
 .slick-item-content::after {
-  content: "";
+  content: "▽";
   position: absolute;
   height: 0px;
   width: 0px;
-  top: 160px;
+  top: 150px;
   left: 30px;
-  border-width: 14px;
-  border-color: #cac8c8 transparent transparent transparent;
-  border-style: solid;
+  font-size: 2.8rem;
+  color: #cac8c8;
+}
+
+.slick-item-content::after {
+  border-top-color: #cac8c8;
 }
 
 .slick-item-down {
@@ -1156,6 +1160,7 @@
 .contact .contact-logo {
   display: flex;
   margin-left: 40px;
+  cursor: pointer;
 }
 .contact .contact-logo i {
   font-size: 28px;
@@ -1391,6 +1396,7 @@
 }
 .form-container .roww a {
   color: #b2d235;
+  text-decoration: underline;
 }
 .form-container .remember-me {
   position: relative;

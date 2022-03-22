@@ -89,15 +89,19 @@
 }
 
 .slick-item-content::after {
-  content: "";
+  content: "\25BD";
   position: absolute;
   height: 0px;
   width: 0px;
-  top: 160px;
+  top: 150px;
   left: 30px;
-  border-width: 14px;
-  border-color: rgb(202, 200, 200) transparent transparent transparent;
-  border-style: solid;
+  font-size: 2.8rem;
+  color: rgb(202, 200, 200);
+  
+}
+
+.slick-item-content::after {
+  border-top-color: rgb(202, 200, 200);
 }
 
 .slick-item-down {
