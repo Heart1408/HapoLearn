@@ -2,7 +2,7 @@
   position: relative;
   font-family: $font-utm;
   background-color: #505353;
-  height: 270px;
+  height: 300px;
 
   .footer-container {
     width: 80%;
@@ -17,10 +17,10 @@
 
 .logo {
   order: 1;
-  margin-top: -30px;
+  margin-top: -70px;
 
   .logo-img {
-    width: 260px;
+    width: 280px;
 
     img {
       width: 100%;
@@ -29,13 +29,12 @@
 
   .slogan {
     color:#b9bdbd;
-    line-height: 20px;
-    font-size: 1.8rem;
-    margin-left: 55px;
-    margin-top: 10px;
+    font-size: 2rem;
+    margin-left: 60px;
+    margin-top: 15px;
     font-weight: normal;
     letter-spacing: -0.05em;
-    line-height: 25px;
+    line-height: 30px;
   }
 }
 
@@ -47,14 +46,14 @@
     a {
       text-decoration: none;
       color: $white;
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       display: block;
-      line-height: 45px;
+      line-height: 50px;
     }
   }
 
   .menu-col:first-child {
-    margin-right: 100px;
+    margin-right: 115px;
   }
 }
 
@@ -65,11 +64,11 @@
 
   .contact-logo {
     display: flex;
-    margin-left: 40px;
+    margin-left: 43px;
     cursor: pointer;
 
     i {
-      font-size: 28px;
+      font-size: 32px;
       color: #505353;
       background-color: $white;
       border-radius: 50px;
@@ -80,11 +79,11 @@
     }
 
     .fa-solid {
-      padding: 10px;
+      padding: 15px;
     }
 
     .fa-brands {
-      padding: 10px 16px;
+      padding: 15px 22px;
     }
 
     .contact-details {
@@ -102,8 +101,65 @@
   background-color: #454545;
   text-align: center;
   color: #c9c8c8;
-  padding: 10px;
-  font-size: 1.3rem;
+  padding: 12px;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1440px) {
+  .footer {
+    height: 270px;
+  }
+  
+  .logo {
+    margin-top: -30px;
+  
+    .logo-img {
+      width: 260px;
+    }
+  
+    .slogan {
+      font-size: 1.8rem;
+      margin-left: 55px;
+      margin-top: 10px;
+      line-height: 25px;
+    }
+  }
+  
+  .menu {
+    .menu-col {
+      a {
+        font-size: 1.7rem;
+        line-height: 45px;
+      }
+    }
+  
+    .menu-col:first-child {
+      margin-right: 100px;
+    }
+  }
+  
+  .contact {
+    .contact-logo {
+      margin-left: 40px;
+  
+      i {
+        font-size: 28px;
+      }
+  
+      .fa-solid {
+        padding: 10px;
+      }
+  
+      .fa-brands {
+        padding: 10px 16px;
+      }
+    }
+  }
+  
+  .footer-bottom {
+    padding: 10px;
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 1024px) {

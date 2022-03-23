@@ -8,11 +8,12 @@
 
 .why-hapo-learn-top {
   position: absolute;
+
   .top-img {
-    width: 400px;
+    width: 460px;
 
     img {
-      margin-top: -215px;
+      margin-top: -250px;
       width: 100%;
     }
   }
@@ -25,44 +26,79 @@
 .content {
   display: flex;
   align-items: center;
-  height: 700px;
+  height: 900px;
 
   .why-hapo-learn-list {
     flex: 5;
   }
 
   .container {
-    width: 500px;
+    width: 650px;
     float: right;
     padding: 0;
-    margin-top: 200px;
+    margin-top: 120px;
 
     .title {
-      font-size: 6rem;
+      font-size: 8.5rem;
       font-weight: bold;
       color: $white;
     }
 
     p {
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       letter-spacing: -0.05em;
-      padding-top: 20px;
+      padding-top: 27px;
       color: rgb(196, 194, 193);
     }
 
     i {
-      font-size: 1.9rem;
-      padding-right: 5px;
+      font-size: 2.5rem;
+      padding-right: 10px;
       color: rgb(242, 242, 242);
     }
   }
 
   .img {
-    flex: 6;
+    flex: 5;
     width: 100%;
 
     img {
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .why-hapo-learn-top {
+    .top-img {
+      width: 400px;
+  
+      img {
+        margin-top: -215px;
+      }
+    }
+  }
+  
+  .content {
+    height: 700px;
+  
+    .container {
+      width: 500px;
+      margin-top: 200px;
+  
+      .title {
+        font-size: 6rem;
+      }
+  
+      p {
+        font-size: 1.8rem;
+        padding-top: 20px;
+      }
+  
+      i {
+        font-size: 1.9rem;
+        padding-right: 5px;
+      }
     }
   }
 }

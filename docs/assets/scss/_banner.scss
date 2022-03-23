@@ -4,6 +4,9 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 900px;
 }
 
 .banner-content {
@@ -24,21 +27,22 @@
 
 .hapo-learn-banner-bottom {
   display: block;
-  height: 120px;
+  height: 150px;
   background-image: linear-gradient(#ffffff, rgb(219, 216, 216));
 }
 
 .banner-content {
-  padding: 120px 70px;
+  width: 90%;
+  margin: auto;
 
   .title {
-    font-size: 3.2vw;
-    line-height: 30px;
+    font-size: 3vw;
+    line-height: 55px;
   }
 
   .subtitle {
     > p {
-      font-size: 3.5vw;
+      font-size: 3.2vw;
     }
 
     .img-hapo-icon {
@@ -49,17 +53,51 @@
 
   .description {
     color: $brown-color;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   .banner-btn {
-    height: 70px;
-    width: 360px;
-    margin-top: 30px;
-    font-size: 2.4rem;
+    height: 85px;
+    width: 410px;
+    margin-top: 40px;
+    font-size: 2.6rem;
     font-weight: bold;
     box-shadow: 0px 4px 4px 0px #6f8710 inset;
     @include button;
+  }
+}
+
+@media (max-width: 1440px) {
+  .hapo-learn-banner {
+    height: 550px;
+  }
+  
+  .hapo-learn-banner-bottom {
+    height: 120px;
+  }
+  
+  .banner-content {
+    .title {
+      font-size: 3.2vw;
+      line-height: 30px;
+    }
+  
+    .subtitle {
+      > p {
+        font-size: 3.5vw;
+      }
+    }
+  
+    .description {
+      font-size: 1.8rem;
+    }
+  
+    .banner-btn {
+      height: 70px;
+      width: 360px;
+      margin-top: 30px;
+      font-size: 2.4rem;
+    }
   }
 }
 

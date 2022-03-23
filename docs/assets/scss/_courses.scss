@@ -4,7 +4,7 @@
   display: flex;
   width: 90%;
   margin: auto;
-  margin-top: -90px;
+  margin-top: -120px;
   padding-bottom: 60px;
 
   .course-card {
@@ -44,31 +44,31 @@
       text-align: center;
       font-weight: normal;
       font-style: normal;
-      padding-top: 15px;
-      font-size: 2.6rem;
+      padding-top: 25px;
+      font-size: 2.8rem;
       margin: 0;
     }
 
     .content {
       color: $brown-color;
-      padding: 0px 15px;
+      padding: 0px 20px;
       text-align: center;
       overflow: hidden;
       text-overflow: ellipsis;
-      line-height: 25px;
+      line-height: 40px;
       -webkit-line-clamp: 3;
-      height: 80px;
+      height: 120px;
+      font-size: 2rem;
       display: -webkit-box;
       -webkit-box-orient: vertical;
     }
 
     button {
-      height: 40px;
-      width: 200px;
+      height: 50px;
+      width: 240px;
       margin: auto;
       margin-bottom: 30px;
-      font-size: 15px;
-      border-radius: 25px;
+      font-size: 1.8rem;
       font-weight: normal;
       box-shadow: inset 0px 1.5px 2px #6F8710;
       @include button;
@@ -78,10 +78,10 @@
   .course-card-logo {
     position: relative;
     border-radius: 15px 15px 0 0;
-    height: 200px;
+    height: 300px;
 
     .img {
-      width: 200px;
+      width: 300px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -98,7 +98,7 @@
   .other-courses-title {
     font-weight: bold;
     color: $color-text;
-    margin-bottom: 120px;
+    margin-bottom: 140px;
 
     p {
       font-family: $font-utm;
@@ -124,6 +124,49 @@
     &:hover {
       font-size: 3.7rem;
       color: $dark-green;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .list-course,
+  .orther-courses-list {
+    margin-top: -90px;
+
+    .course-card {
+      .title {
+        padding-top: 15px;
+        font-size: 2.6rem;
+      }
+
+      .content {
+        padding: 0px 15px;
+        line-height: 25px;
+        font-size: 1.5rem;
+        -webkit-line-clamp: 3;
+        height: 80px;
+      }
+
+      button {
+        height: 40px;
+        width: 200px;
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+      }
+    }
+
+    .course-card-logo {
+      height: 200px;
+
+      .img {
+        width: 200px;
+      }
+    }
+  }
+
+  .orther-courses {
+    .other-courses-title {
+      margin-bottom: 120px;
     }
   }
 }
