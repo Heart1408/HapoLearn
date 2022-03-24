@@ -102,6 +102,10 @@
 }
 
 @media (max-width: 1024px) {
+  .hapo-learn-banner {
+    height: 480px;
+  }
+
   .banner-content {
     .banner-btn {
       height: 65px;
@@ -113,9 +117,11 @@
 }
 
 @media (max-width: 950px) {
-  .banner-content {
-    padding: 80px 30px;
+  .hapo-learn-banner {
+    height: 440px;
+  }
 
+  .banner-content {
     .banner-btn {
       height: 60px;
       width: 300px;
@@ -129,6 +135,10 @@
 }
 
 @media (max-width: 768px) {
+  .hapo-learn-banner {
+    height: 400px;
+  }
+
   .banner-content {
     .banner-btn {
       padding: 7px 40px;
@@ -138,6 +148,10 @@
 }
 
 @media (max-width: 650px) {
+  .hapo-learn-banner {
+    height: 360px;
+  }
+
   .hapo-learn-banner {
     display: flex;
     justify-content: center;
@@ -180,5 +194,11 @@
   .hapo-learn-banner-bottom {
     margin-top: 230px;
     height: 80px;
+  }
+}
+
+@media (max-width: 424px) {
+  .hapo-learn-banner {
+    height: 260px;
   }
 }

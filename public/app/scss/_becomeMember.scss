@@ -20,7 +20,6 @@
   .become-member-btn {
     @include button;
     font-size: 2.5rem;
-    font-weight: normal;
     color: #90AB26;
     -webkit-text-stroke: 0.6px #9e9e22;
     background-color: $white;
@@ -53,6 +52,7 @@
       margin-top: 20px;
       height: 50px;
       width: 250px;
+      -webkit-text-stroke: 0.4px #9e9e22;
     }
   }
 }

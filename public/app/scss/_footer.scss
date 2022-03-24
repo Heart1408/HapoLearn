@@ -303,3 +303,53 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .footer {
+    height: 340px;
+
+    .menu {
+      padding-top: 15px;
+
+      a {
+        font-size: 1.4rem;
+        line-height: 42px;
+      }
+    }
+
+    .logo {
+      .logo-img {
+        width: 140px;
+      }
+
+      .slogan {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .contact {
+    margin-right: 0;
+
+    .contact-logo {
+      margin-left: 3px;
+
+      i {
+        font-size: 18px;
+      }
+  
+      .fa-solid {
+        padding: 6px;
+      }
+  
+      .fa-brands {
+        padding: 6px 10px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 6px;
+    font-size: 1rem;
+  }
+}

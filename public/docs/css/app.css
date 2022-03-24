@@ -81,10 +81,10 @@
   }
 
   .header-menu-list li {
-    margin-left: 10px;
+    margin-left: 20px;
   }
   .header-menu-list li a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 1024px) {
@@ -100,6 +100,7 @@
     display: flex;
     width: 85%;
     margin: auto;
+    margin-top: 20px;
     justify-content: space-between;
   }
   .header-menu-list li {
@@ -107,6 +108,10 @@
   }
 }
 @media (max-width: 650px) {
+  .header {
+    height: 83px;
+  }
+
   .header-menu {
     display: block;
     height: 75px;
@@ -251,6 +256,10 @@
   }
 }
 @media (max-width: 1024px) {
+  .hapo-learn-banner {
+    height: 480px;
+  }
+
   .banner-content .banner-btn {
     height: 65px;
     width: 330px;
@@ -259,9 +268,10 @@
   }
 }
 @media (max-width: 950px) {
-  .banner-content {
-    padding: 80px 30px;
+  .hapo-learn-banner {
+    height: 440px;
   }
+
   .banner-content .banner-btn {
     height: 60px;
     width: 300px;
@@ -273,12 +283,20 @@
   }
 }
 @media (max-width: 768px) {
+  .hapo-learn-banner {
+    height: 400px;
+  }
+
   .banner-content .banner-btn {
     padding: 7px 40px;
     font-size: 18px;
   }
 }
 @media (max-width: 650px) {
+  .hapo-learn-banner {
+    height: 360px;
+  }
+
   .hapo-learn-banner {
     display: flex;
     justify-content: center;
@@ -315,6 +333,11 @@
   .hapo-learn-banner-bottom {
     margin-top: 230px;
     height: 80px;
+  }
+}
+@media (max-width: 424px) {
+  .hapo-learn-banner {
+    height: 260px;
   }
 }
 .list-course,
@@ -869,6 +892,30 @@
     margin-top: -40px;
   }
 }
+@media (max-width: 425px) {
+  .why-hapo-learn-top .top-img {
+    width: 220px;
+  }
+  .why-hapo-learn-top .top-img img {
+    margin-top: -120px;
+  }
+  .why-hapo-learn-top .active {
+    width: 250px;
+    margin-left: -60px;
+    margin-top: 20px;
+    font-size: 3.6rem;
+  }
+
+  .content {
+    height: 570px;
+  }
+  .content .container i {
+    font-size: 1.6rem;
+  }
+  .content .img {
+    width: 350px;
+  }
+}
 .feedback {
   font-family: "Varela Round", sans-serif;
   margin: 50px 0;
@@ -1076,7 +1123,6 @@
   border: none;
   border-radius: 100px;
   font-size: 2.5rem;
-  font-weight: normal;
   color: #90AB26;
   -webkit-text-stroke: 0.6px #9e9e22;
   background-color: #ffffff;
@@ -1107,8 +1153,9 @@
   .become-member .become-member-btn {
     font-size: 1.8rem;
     margin-top: 20px;
-    height: 47px;
+    height: 50px;
     width: 250px;
+    -webkit-text-stroke: 0.4px #9e9e22;
   }
 }
 @media (max-width: 650px) {
@@ -1122,7 +1169,7 @@
   .become-member .become-member-btn {
     font-size: 1.5rem;
     margin-top: 12px;
-    height: 40px;
+    height: 42px;
     width: 210px;
   }
 }
@@ -1453,6 +1500,45 @@
     display: flex;
     float: right;
     margin-right: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .footer {
+    height: 340px;
+  }
+  .footer .menu {
+    padding-top: 15px;
+  }
+  .footer .menu a {
+    font-size: 1.4rem;
+    line-height: 42px;
+  }
+  .footer .logo .logo-img {
+    width: 140px;
+  }
+  .footer .logo .slogan {
+    font-size: 1rem;
+  }
+
+  .contact {
+    margin-right: 0;
+  }
+  .contact .contact-logo {
+    margin-left: 3px;
+  }
+  .contact .contact-logo i {
+    font-size: 18px;
+  }
+  .contact .contact-logo .fa-solid {
+    padding: 6px;
+  }
+  .contact .contact-logo .fa-brands {
+    padding: 6px 10px;
+  }
+
+  .footer-bottom {
+    padding: 6px;
+    font-size: 1rem;
   }
 }
 .form-popup {
