@@ -1,6 +1,6 @@
 .feedback {
   font-family: $font-utm;
-  margin: 50px 0;
+  margin: 120px 0;
 }
 
 .feedback-title {
@@ -12,6 +12,7 @@
     line-height: 100px;
     width: 320px;
     margin: auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -20,7 +21,6 @@
   margin: auto;
   text-align: center;
   width: 65%;
-  min-width: 400px;
   padding: 35px;
   font-size: 2.4rem;
 }
@@ -141,15 +141,16 @@
 
 @media (max-width: 1024px) {
   .feedback {
-    margin: 50px 20px;
+    margin: 120px 20px;
   }
 
   .feedback-title {
     p {
       font-size: 4.8rem;
-      line-height: 63px;
+      line-height: 65px;
       width: 225px;
       border-bottom: 4px solid $theme-color;
+      margin-bottom: 10px;
     }
   }
 
@@ -175,7 +176,7 @@
   }
 
   .feedback-desc {
-    width: 400px;
+    width: 380px;
     margin: auto;
     text-align: center;
     padding: 15px;
@@ -197,5 +198,12 @@
 
   .slick-item-content::after {
     top: 139px;
+  }
+}
+
+@media (max-width: 425px) {
+  .feedback-desc {
+    width: 300px;
+    font-size: 1.4rem;
   }
 }

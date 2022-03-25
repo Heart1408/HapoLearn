@@ -98,7 +98,8 @@
   .other-courses-title {
     font-weight: bold;
     color: $color-text;
-    margin-bottom: 140px;
+    margin-bottom: 180px;
+    margin-top: 50px;
 
     p {
       font-family: $font-utm;
@@ -119,7 +120,7 @@
     text-align: center;
     text-decoration: none;
     font-size: 3.6rem;
-    margin-top: -20px;
+    margin-top: -10px;
 
     &:hover {
       font-size: 3.7rem;
@@ -166,7 +167,12 @@
 
   .orther-courses {
     .other-courses-title {
-      margin-bottom: 120px;
+      margin-bottom: 130px;
+      margin-top: 20px;
+    }
+
+    .other-courses-link {
+      margin-top: -15px;
     }
   }
 }

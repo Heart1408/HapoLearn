@@ -304,6 +304,26 @@
   }
 }
 
+@media (max-width: 465px) {
+  .footer {
+    .contact-logo {
+      margin-left: 5px;
+
+      i {
+        font-size: 1.8rem;
+      }
+
+      .fa-solid {
+        padding: 6px;
+      }
+
+      .fa-brands {
+        padding: 6px 10px;
+      }
+    }
+  }
+}
+
 @media (max-width: 425px) {
   .footer {
     height: 340px;
@@ -330,22 +350,6 @@
 
   .contact {
     margin-right: 0;
-
-    .contact-logo {
-      margin-left: 3px;
-
-      i {
-        font-size: 18px;
-      }
-  
-      .fa-solid {
-        padding: 6px;
-      }
-  
-      .fa-brands {
-        padding: 6px 10px;
-      }
-    }
   }
 
   .footer-bottom {

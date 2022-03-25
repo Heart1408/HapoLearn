@@ -10,18 +10,8 @@
 }
 
 .banner-content {
-  .title {
-    color: $color-text;
-    font-weight: normal;
-  }
-
   div {
     display: flex;
-
-    > p {
-      font-weight: bolder;
-      color: $color-text;
-    }
   }
 }
 
@@ -36,12 +26,16 @@
   margin: auto;
 
   .title {
+    color: $color-text;
+    font-weight: normal;
     font-size: 3vw;
     line-height: 55px;
   }
 
   .subtitle {
     > p {
+      font-weight: bolder;
+      color: $color-text;
       font-size: 3.2vw;
     }
 
@@ -69,7 +63,7 @@
 
 @media (max-width: 1440px) {
   .hapo-learn-banner {
-    height: 550px;
+    height: 500px;
   }
   
   .hapo-learn-banner-bottom {
@@ -103,7 +97,7 @@
 
 @media (max-width: 1024px) {
   .hapo-learn-banner {
-    height: 480px;
+    height: 450px;
   }
 
   .banner-content {
@@ -118,14 +112,15 @@
 
 @media (max-width: 950px) {
   .hapo-learn-banner {
-    height: 440px;
+    height: 400px;
+    background-position: left;
   }
 
   .banner-content {
     .banner-btn {
-      height: 60px;
-      width: 300px;
-      font-size: 2.1rem;
+      height: 55px;
+      width: 280px;
+      font-size: 2rem;
     }
   }
 
@@ -136,20 +131,22 @@
 
 @media (max-width: 768px) {
   .hapo-learn-banner {
-    height: 400px;
+    height: 340px;
   }
 
   .banner-content {
     .banner-btn {
-      padding: 7px 40px;
-      font-size: 18px;
+      height: 50px;
+      width: 240px;
+      font-size: 1.6rem;
     }
   }
 }
 
 @media (max-width: 650px) {
   .hapo-learn-banner {
-    height: 360px;
+    background-position: right;
+    height: 320px;
   }
 
   .hapo-learn-banner {
@@ -162,7 +159,7 @@
   div.banner-content {
     position: absolute;
     padding: 20px;
-    top: 300px;
+    top: 310px;
     width: 360px;
     margin: 0 auto;
 
@@ -176,6 +173,7 @@
       > p {
         font-size: 3rem;
         margin: 0;
+        line-height: 50px;
       }
 
       .img-hapo-icon {
@@ -185,14 +183,16 @@
     }
 
     .banner-btn {
-      padding: 8px 45px;
+      height: 53px;
+      width: 280px;
       font-size: 1.9rem;
       letter-spacing: -0.05em;
+      margin-top: 15px;
     }
   }
 
   .hapo-learn-banner-bottom {
-    margin-top: 230px;
+    margin-top: 250px;
     height: 80px;
   }
 }
