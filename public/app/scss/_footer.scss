@@ -1,0 +1,359 @@
+.footer {
+  position: relative;
+  font-family: $font-utm;
+  background-color: #505353;
+  height: 300px;
+
+  .footer-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  order: 1;
+  margin-top: -70px;
+
+  .logo-img {
+    width: 280px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .slogan {
+    color:#b9bdbd;
+    font-size: 2rem;
+    margin-left: 60px;
+    margin-top: 15px;
+    font-weight: normal;
+    letter-spacing: -0.05em;
+    line-height: 30px;
+  }
+}
+
+.menu {
+  order: 2;
+  display: flex;
+
+  .menu-col {
+    a {
+      text-decoration: none;
+      color: $white;
+      font-size: 1.9rem;
+      display: block;
+      line-height: 50px;
+    }
+  }
+
+  .menu-col:first-child {
+    margin-right: 115px;
+  }
+}
+
+.contact {
+  order: 3;
+  display: flex;
+  align-items: center;
+
+  .contact-logo {
+    display: flex;
+    margin-left: 43px;
+    cursor: pointer;
+
+    i {
+      font-size: 32px;
+      color: #505353;
+      background-color: $white;
+      border-radius: 50px;
+    }
+
+    a {
+      color: $white;
+    }
+
+    .fa-solid {
+      padding: 15px;
+    }
+
+    .fa-brands {
+      padding: 15px 22px;
+    }
+
+    .contact-details {
+      display: none;
+    }
+    
+    .contact-active {
+      display: block;
+    }
+  }
+}
+
+.footer-bottom {
+  font-family: $font-utm;
+  background-color: #454545;
+  text-align: center;
+  color: #c9c8c8;
+  padding: 12px;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1440px) {
+  .footer {
+    height: 270px;
+  }
+  
+  .logo {
+    margin-top: -30px;
+  
+    .logo-img {
+      width: 260px;
+    }
+  
+    .slogan {
+      font-size: 1.8rem;
+      margin-left: 55px;
+      margin-top: 10px;
+      line-height: 25px;
+    }
+  }
+  
+  .menu {
+    .menu-col {
+      a {
+        font-size: 1.7rem;
+        line-height: 45px;
+      }
+    }
+  
+    .menu-col:first-child {
+      margin-right: 100px;
+    }
+  }
+  
+  .contact {
+    .contact-logo {
+      margin-left: 40px;
+  
+      i {
+        font-size: 28px;
+      }
+  
+      .fa-solid {
+        padding: 10px;
+      }
+  
+      .fa-brands {
+        padding: 10px 16px;
+      }
+    }
+  }
+  
+  .footer-bottom {
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    height: 240px;
+  }
+  
+  .logo {
+    margin-top: -60px;
+  
+    .logo-img {
+      width: 200px;
+    }
+  
+    .slogan {
+      font-size: 1.4rem;
+      margin-left: 8px;
+      margin-top: 10px;
+      line-height: 20px;
+      letter-spacing: unset;
+    }
+  }
+  
+  .menu {
+    .menu-col {
+      a {
+        font-size: 1.6rem;
+        line-height: 42px;
+      }
+    }
+  
+    .menu-col:first-child {
+      margin-right: 40px;
+    }
+  }
+  
+  .contact {
+    .contact-logo {
+      margin-left: 20px;
+  
+      i {
+        font-size: 25px;
+      }
+  
+      .fa-solid {
+        padding: 8px;
+      }
+  
+      .fa-brands {
+        padding: 8px 13px;
+      }
+    }
+  }  
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: 235px;
+  
+    .footer-container {
+      width: 90%;
+    }
+  }
+  
+  .logo {
+    .logo-img {
+      width: 180px;
+    }
+  
+    .slogan {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .menu {
+    .menu-col {
+      a {
+        font-size: 1.4rem;
+        line-height: 40px;
+      }
+    }
+  
+    .menu-col:first-child {
+      margin-right: 28px;
+    }
+  }
+  
+  .contact {
+    .contact-logo {
+      margin-left: 10px;
+  
+      i {
+        font-size: 20px;
+      }
+  
+      .fa-brands {
+        padding: 8px 12px;
+      }
+    }
+  } 
+  
+  .footer-bottom {
+    padding: 8px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .footer {
+    height: 350px;
+    
+    .footer-container {
+      display: block;
+    }
+
+    .menu {
+      justify-content: space-between;
+      margin: 30px 20%;
+      padding-top: 20px;
+
+      a {
+        font-size: 1.6rem;
+        line-height: 45px;
+      }
+    }
+
+    .logo {
+      display: inline-block;
+      margin: 0;
+      margin-left: 20%;
+
+      .logo-img {
+        width: 165px;
+      }
+    }
+
+    .contact {
+      display: flex;
+      float: right;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 465px) {
+  .footer {
+    .contact-logo {
+      margin-left: 5px;
+
+      i {
+        font-size: 1.8rem;
+      }
+
+      .fa-solid {
+        padding: 6px;
+      }
+
+      .fa-brands {
+        padding: 6px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .footer {
+    height: 340px;
+
+    .menu {
+      padding-top: 15px;
+
+      a {
+        font-size: 1.4rem;
+        line-height: 42px;
+      }
+    }
+
+    .logo {
+      .logo-img {
+        width: 140px;
+      }
+
+      .slogan {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .contact {
+    margin-right: 0;
+  }
+
+  .footer-bottom {
+    padding: 6px;
+    font-size: 1rem;
+  }
+}
