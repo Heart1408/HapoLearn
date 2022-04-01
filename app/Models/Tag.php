@@ -7,9 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
-    public function courses() 
+    protected $fillable = [
+        'course_id',
+        'user_id',
+        'rate',
+        'comment',
+    ];
+
+    public function courses()
     {
         return $this->belongsToMany(Course::class);
     }

@@ -17,7 +17,7 @@ class CreateDocumentsTable extends Migration
             $table->id();
             $table->integer('lesson_id');
             $table->string('name', 255);
-            $table->string('link',255);
+            $table->string('link', 255);
             $table->timestamps();
             $table->softDeletes();
         });
