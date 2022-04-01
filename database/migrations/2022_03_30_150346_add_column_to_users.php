@@ -15,7 +15,7 @@ class AddColumnToUsers extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('fullname', 100)->nullable();
-            $table->integer('phone')->nullable();
+            $table->string('phone', 20)->nullable();
             $table->string('address', 255)->nullable();
             $table->time('birthday')->nullable();
             $table->string('avartar')->nullable();
@@ -31,8 +31,11 @@ class AddColumnToUsers extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
-            Schema::dropIfExists('users');
+            $table->dropColumn('fullname');
+            $table->dropColumn('phone');
+            $table->dropColumn('address');
+            $table->dropColumn('birthday');
+            $table->dropColumn('avartar');
         });
     }
 }

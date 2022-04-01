@@ -31,6 +31,9 @@ class CreateLessonsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lessons');
+        $table->dropColumn('course_id');
+        $table->dropColumn('description');
+        $table->dropColumn('requirement');
+        $table->dropColumn('time');
     }
 }

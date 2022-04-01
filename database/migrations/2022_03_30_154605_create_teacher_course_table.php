@@ -29,6 +29,7 @@ class CreateTeacherCourseTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('teacher_course');
+        $table->dropColumn('user_id');
+        $table->dropColumn('course_id');
     }
 }

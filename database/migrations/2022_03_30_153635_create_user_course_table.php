@@ -29,6 +29,7 @@ class CreateUserCourseTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_course');
+        $table->dropColumn('user_id');
+        $table->dropColumn('course_id');
     }
 }

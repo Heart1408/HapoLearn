@@ -29,6 +29,7 @@ class CreateUserLessonTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_lesson');
+        $table->dropColumn('user_id');
+        $table->dropColumn('lesson_id');
     }
 }

@@ -30,6 +30,8 @@ class CreateDocumentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('documents');
+        $table->dropColumn('lesson_id');
+        $table->dropColumn('name');
+        $table->dropColumn('link');
     }
 }

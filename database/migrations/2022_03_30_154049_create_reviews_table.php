@@ -31,6 +31,9 @@ class CreateReviewsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reviews');
+        $table->dropColumn('user_id');
+        $table->dropColumn('course_id');
+        $table->dropColumn('rate');
+        $table->dropColumn('comment');
     }
 }

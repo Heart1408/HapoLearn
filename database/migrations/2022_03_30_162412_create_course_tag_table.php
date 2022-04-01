@@ -29,6 +29,7 @@ class CreateCourseTagTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('course_tag');
+        $table->dropColumn('course_id');
+        $table->dropColumn('tag_id');
     }
 }
