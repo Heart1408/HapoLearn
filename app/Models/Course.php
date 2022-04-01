@@ -8,8 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Course extends Model
 {
-    use HasFactory,
-        SoftDeletes;
+    use HasFactory, SoftDeletes;
 
     protected $fillable = [
         'name',
@@ -25,7 +24,7 @@ class Course extends Model
 
     public function teachers()
     {
-        return $this->belongsToMany(Course::class, 'teacher_course', 'course_id', 'user_id');
+        return $this->belongsToMany(User::class, 'teacher_course', 'course_id', 'user_id');
     }
 
     public function reviews()
