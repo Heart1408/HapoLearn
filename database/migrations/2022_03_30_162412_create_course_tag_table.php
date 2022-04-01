@@ -31,5 +31,6 @@ class CreateCourseTagTable extends Migration
     {
         $table->dropColumn('course_id');
         $table->dropColumn('tag_id');
+        $table->dropSoftDeletes();
     }
 }

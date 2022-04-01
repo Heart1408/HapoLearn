@@ -31,5 +31,6 @@ class CreateUserLessonTable extends Migration
     {
         $table->dropColumn('user_id');
         $table->dropColumn('lesson_id');
+        $table->dropSoftDeletes();
     }
 }

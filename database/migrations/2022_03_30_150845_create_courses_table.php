@@ -35,5 +35,6 @@ class CreateCoursesTable extends Migration
         $table->dropColumn('description');
         $table->dropColumn('logo');
         $table->dropColumn('price');
+        $table->dropSoftDeletes();
     }
 }

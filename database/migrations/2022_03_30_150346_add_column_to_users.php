@@ -36,6 +36,7 @@ class AddColumnToUsers extends Migration
             $table->dropColumn('address');
             $table->dropColumn('birthday');
             $table->dropColumn('avartar');
+            $table->dropSoftDeletes();
         });
     }
 }

@@ -33,5 +33,6 @@ class CreateDocumentsTable extends Migration
         $table->dropColumn('lesson_id');
         $table->dropColumn('name');
         $table->dropColumn('link');
+        $table->dropSoftDeletes();
     }
 }

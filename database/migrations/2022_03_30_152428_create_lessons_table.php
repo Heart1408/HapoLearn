@@ -35,5 +35,6 @@ class CreateLessonsTable extends Migration
         $table->dropColumn('description');
         $table->dropColumn('requirement');
         $table->dropColumn('time');
+        $table->dropSoftDeletes();
     }
 }

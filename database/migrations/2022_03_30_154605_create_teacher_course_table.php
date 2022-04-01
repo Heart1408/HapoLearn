@@ -31,5 +31,6 @@ class CreateTeacherCourseTable extends Migration
     {
         $table->dropColumn('user_id');
         $table->dropColumn('course_id');
+        $table->dropSoftDeletes();
     }
 }

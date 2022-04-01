@@ -35,5 +35,6 @@ class CreateReviewsTable extends Migration
         $table->dropColumn('course_id');
         $table->dropColumn('rate');
         $table->dropColumn('comment');
+        $table->dropSoftDeletes();
     }
 }

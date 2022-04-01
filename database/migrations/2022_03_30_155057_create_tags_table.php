@@ -31,5 +31,6 @@ class CreateTagsTable extends Migration
     {
         $table->dropColumn('name');
         $table->dropColumn('link');
+        $table->dropSoftDeletes();
     }
 }
