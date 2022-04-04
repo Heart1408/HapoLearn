@@ -4,8 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use App\Models\UserCourse;
 
-class UserCourseTableSeeder extends Seeder
+class UserCoursesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,10 +15,8 @@ class UserCourseTableSeeder extends Seeder
      */
     public function run()
     {
-        //
-        DB::table('user_course')->insert([
-            'user_id' => 1,
-            'course_id' => 1,
-        ]);
+        {
+            UserCourse::factory()->count(100)->create();
+        }
     }
 }

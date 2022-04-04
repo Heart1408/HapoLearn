@@ -19,6 +19,7 @@ class AddColumnToUsers extends Migration
             $table->string('address', 255)->nullable();
             $table->time('birthday')->nullable();
             $table->string('avartar')->nullable();
+            $table->integer('role')->nullable();
             $table->softDeletes();
         });
     }
@@ -36,6 +37,7 @@ class AddColumnToUsers extends Migration
             $table->dropColumn('address');
             $table->dropColumn('birthday');
             $table->dropColumn('avartar');
+            $table->dropColumn('role');
             $table->dropSoftDeletes();
         });
     }
