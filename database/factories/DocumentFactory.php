@@ -5,7 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-class CourseFactory extends Factory
+class DocumentFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,10 +16,9 @@ class CourseFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->text($maxNbChars = 100),
-            'description' => $this->faker->text(),
-            'logo' => $this->faker->imageUrl(),
-            'price' => 'free'
+            'lesson_id' => $this->faker->numberBetween($min = 1, $max = 100),
+            'name' => $this->faker->name,
+            'link' => $this->faker->url(),
         ];
     }
 }
