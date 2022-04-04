@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use App\Course;
+use App\Models\Course;
 
 class CoursesTableSeeder extends Seeder
 {
@@ -15,12 +15,6 @@ class CoursesTableSeeder extends Seeder
      */
     public function run()
     {
-        //
-        DB::table('courses')->insert([
-            'name' => 'nametest',
-            'description' => 'descriptiontest',
-            'logo' => 'logotest',
-            'price' => 'free'
-        ]);
+        Course::factory()->count(100)->create();
     }
 }
