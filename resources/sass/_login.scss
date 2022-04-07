@@ -1,0 +1,404 @@
+.form-popup {
+  position: fixed;
+  background-color: rgba(48, 46, 46, 0.9);
+  z-index: 3000;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: $font-utm;
+  display: none;
+
+  .popup-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 32%;
+    min-width: 340px;
+    max-width: 430px;
+  }
+}
+
+.active-form {
+  display: block;
+}
+
+.form {
+  position: relative;
+  background-color: $white;
+
+  .close-form {
+    position: absolute;
+    border: none;
+    background-color: $theme-color;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    font-size: 2.5rem;
+    right: -15px;
+    top: -15px;
+  }
+
+  .form-header {
+    display: flex;
+
+    button {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $theme-color;
+      background-color: $white;
+      color: $theme-color;
+      font-weight: bold;
+      font-size: 2rem;
+      height: 70px;
+    }
+
+    .active {
+      background-color: $theme-color;
+      color: $white;
+    }
+  }
+}
+
+.form-container {
+  width: 87%;
+  margin: auto;
+
+  .textfield {
+    display: block;
+    color: $brown-color;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.4rem;
+    margin-top: 30px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    background-color: #f2f2f2;
+    outline: none;
+    text-indent: 12px;
+    font-size: 1.8rem;
+    height: 60px;
+  }
+
+  .roww {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    font-size: 1.2rem;
+
+    a {
+      color: $theme-color;
+      text-decoration: underline;
+    }
+  }
+
+  .remember-me {
+    position: relative;
+    padding-left: 22px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: $brown-color;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0;
+
+      &:checked ~ .checkmark {
+        background-color: $theme-color;
+        border: 1px solid $theme-color;
+      }
+
+      &:checked ~ .checkmark:after {
+        display: block;
+      }
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      height: 15px;
+      width: 15px;
+      border: 1px solid #aaaaaa;
+      border-radius: 2px;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 3px;
+        width: 7px;
+        height: 10px;
+        border: 3px solid white;
+        border-width: 0px 3px 3px 0px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  .submit-form-btn {
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px 0px #6f8710 inset;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    height: 42px;
+    width: 205px;
+    @include button;
+  }
+
+  .line {
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0 -7%;
+  }
+
+  .login-width {
+    width: 110px;
+    text-align: center;
+    margin: auto;
+    margin-top: -12px;
+    margin-bottom: 20px;
+    color: $brown-color;
+    background-color: $white;
+    font-size: 1.4rem;
+  }
+
+  .login-width-gg-btn,
+  .login-width-fb-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: $white;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+
+    i {
+      font-size: 2.8rem;
+      padding-right: 8px;
+    }
+  }
+
+  .login-width-gg-btn {
+    background-color: #dc4e41;
+    margin-top: 25px;
+
+    &:hover {
+      background-color: #b13d32;
+      font-size: 1.2rem;
+    }
+  }
+
+  .login-width-fb-btn {
+    display: inline;
+    background-color: #3b5999;
+    margin-bottom: 45px;
+
+    &:hover {
+      background-color: #29437b;
+      font-size: 1.2rem;
+    }
+  }
+
+  .form-bottom {
+    height: 20px;
+  }
+}
+
+.register-form {
+  display: none;
+}
+
+@media (max-width: 1500px) {
+  @media (max-height: 814px) {
+    .form {
+      .close-form {
+        width: 35px;
+        height: 35px;
+        font-size: 2rem;
+        right: -12px;
+        top: -12px;
+      }
+
+      .form-header {
+        button {
+          font-size: 1.5rem;
+          height: 50px;
+        }
+      }
+    }
+
+    .form-container {
+      .textfield {
+        font-size: 1.2rem;
+        margin-top: 20px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        text-indent: 10px;
+        font-size: 1.4rem;
+        height: 45px;
+      }
+
+      .roww {
+        margin-top: 10px;
+        font-size: 1rem;
+      }
+
+      .remember-me {
+        font-size: 1rem;
+
+        .checkmark {
+          top: 2px;
+        }
+      }
+
+      .submit-form-btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        height: 35px;
+        width: 180px;
+      }
+
+      .login-width {
+        width: 90px;
+        font-size: 1rem;
+      }
+
+      .login-width-gg-btn,
+      .login-width-fb-btn {
+        height: 45px;
+        margin-bottom: 12px;
+        font-size: 1rem;
+
+        i {
+          font-size: 2.2rem;
+          padding-right: 8px;
+        }
+      }
+
+      .login-width-gg-btn {
+        margin-top: 20px;
+
+        &:hover {
+          font-size: 1.2rem;
+        }
+      }
+
+      .login-width-fb-btn {
+        margin-bottom: 35px;
+
+        &:hover {
+          font-size: 1.2rem;
+        }
+      }
+
+      .form-bottom {
+        height: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  @media (max-height: 814px) {
+    .form {
+      .close-form {
+        width: 30px;
+        height: 30px;
+        font-size: 1.6rem;
+        right: -10px;
+        top: -10px;
+      }
+
+      .form-header {
+        button {
+          font-size: 1.2rem;
+          height: 45px;
+        }
+      }
+    }
+
+    .form-container {
+      .textfield {
+        font-size: 1rem;
+        margin-top: 15px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        font-size: 1.2rem;
+        height: 40px;
+      }
+
+      .roww {
+        margin-top: 8px;
+        font-size: 0.8rem;
+      }
+
+      .submit-form-btn {
+        margin-top: 15px;
+        font-size: 1rem;
+        height: 32px;
+        width: 160px;
+      }
+
+      .login-width {
+        width: 85px;
+        font-size: 1rem;
+      }
+
+      .login-width-gg-btn,
+      .login-width-fb-btn {
+        height: 38px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+
+        i {
+          font-size: 2rem;
+          padding-right: 6px;
+        }
+      }
+
+      .login-width-gg-btn {
+        margin-top: -5px;
+        &:hover {
+          font-size: 1rem;
+        }
+      }
+
+      .login-width-fb-btn {
+        margin-bottom: 30px;
+
+        &:hover {
+          font-size: 1rem;
+        }
+      }
+
+      .form-bottom {
+        height: 10px;
+      }
+    }
+  }
+}

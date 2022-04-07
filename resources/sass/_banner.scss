@@ -1,0 +1,208 @@
+.hapo-learn-banner {
+  background-image: url("../assets/images/hapo_Learn_banner.png");
+  font-family: $font-utm;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 900px;
+}
+
+.banner-content {
+  div {
+    display: flex;
+  }
+}
+
+.hapo-learn-banner-bottom {
+  display: block;
+  height: 150px;
+  background-image: linear-gradient(#ffffff, rgb(219, 216, 216));
+}
+
+.banner-content {
+  width: 90%;
+  margin: auto;
+
+  .title {
+    color: $color-text;
+    font-weight: normal;
+    font-size: 3vw;
+    line-height: 55px;
+  }
+
+  .subtitle {
+    > p {
+      font-weight: bolder;
+      color: $color-text;
+      font-size: 3.2vw;
+    }
+
+    .img-hapo-icon {
+      width: 4vw;
+      height: 4vw;
+    }
+  }
+
+  .description {
+    color: $brown-color;
+    font-size: 1.8rem;
+  }
+
+  .banner-btn {
+    height: 85px;
+    width: 410px;
+    margin-top: 40px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px 0px #6f8710 inset;
+    @include button;
+  }
+}
+
+@media (max-width: 1440px) {
+  .hapo-learn-banner {
+    height: 500px;
+  }
+  
+  .hapo-learn-banner-bottom {
+    height: 120px;
+  }
+  
+  .banner-content {
+    .title {
+      font-size: 3.2vw;
+      line-height: 30px;
+    }
+  
+    .subtitle {
+      > p {
+        font-size: 3.5vw;
+      }
+    }
+  
+    .description {
+      font-size: 1.4rem;
+    }
+  
+    .banner-btn {
+      height: 70px;
+      width: 360px;
+      margin-top: 30px;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .hapo-learn-banner {
+    height: 450px;
+  }
+
+  .banner-content {
+    .banner-btn {
+      height: 65px;
+      width: 330px;
+      font-size: 1.9rem;
+      margin-top: 25px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .hapo-learn-banner {
+    height: 400px;
+    background-position: left;
+  }
+
+  .banner-content {
+    .banner-btn {
+      height: 55px;
+      width: 280px;
+      font-size: 1.6rem;
+    }
+  }
+
+  .hapo-learn-banner-bottom {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hapo-learn-banner {
+    height: 340px;
+  }
+
+  .banner-content {
+    .banner-btn {
+      height: 50px;
+      width: 240px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .hapo-learn-banner {
+    background-position: right;
+    height: 320px;
+  }
+
+  .hapo-learn-banner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 290px;
+  }
+
+  div.banner-content {
+    position: absolute;
+    padding: 20px;
+    top: 310px;
+    width: 360px;
+    margin: 0 auto;
+
+    .title {
+      font-size: 2rem;
+      letter-spacing: -0.05em;
+      margin: 0;
+    }
+
+    .subtitle {
+      > p {
+        font-size: 2rem;
+        margin: 0;
+        line-height: 45px;
+      }
+
+      .img-hapo-icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .banner-btn {
+      height: 53px;
+      width: 280px;
+      font-size: 1.4rem;
+      letter-spacing: -0.05em;
+      margin-top: 15px;
+    }
+  }
+
+  .hapo-learn-banner-bottom {
+    margin-top: 300px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 424px) {
+  .hapo-learn-banner {
+    height: 260px;
+  }
+}
