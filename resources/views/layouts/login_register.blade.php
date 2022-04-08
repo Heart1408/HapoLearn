@@ -8,11 +8,17 @@
                 <button class="active" id="openLoginFormBtn">LOGIN</button>
                 <button id="openRegisterFormBtn">REGISTER</button>
             </div>
-            <form class="form-container login-form active-form" id="loginForm">
+            <form class="form-container login-form active-form" id="loginForm" action="{{ Route('login') }}" method="POST">
+                @csrf
                 <label class="textfield" for="username">Username:</label>
-                <input id="username" type="text">
+                <input class="form-control custom-input-text @error('register_username') is-invalid @enderror" id="username" type="text" name="username">
+                <label class="text-danger form-label custom-label font-weight-bold">
+                                    @error('register_username')
+                                        {{ $message }}
+                                    @enderror
+                                </label>
                 <label class="textfield" for="password">Password:</label>
-                <input id="password" type="password">
+                <input id="password" type="password" name="password">
                 <div class="roww">
                     <div class="remember-me">
                         <label for="rememberMe">
