@@ -15,7 +15,7 @@
                 </li>
                 <li>
                     <a id="loginRegisterFormBtn" href="#">LOGIN/REGISTER</a>
-                </li>
+                </li> 
                 <li>
                     <a href="#">PROFILE</a>
                 </li>

@@ -10,9 +10,9 @@
             </div>
             <form class="form-container login-form active-form" id="loginForm">
                 <label class="textfield" for="username">Username:</label>
-                <input id="username" type="text">
+                <input id="username" name="username" type="text">
                 <label class="textfield" for="password">Password:</label>
-                <input id="password" type="password">
+                <input id="password" name="password" type="password">
                 <div class="roww">
                     <div class="remember-me">
                         <label for="rememberMe">

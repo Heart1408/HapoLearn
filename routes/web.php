@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
 
-Route::get('/homepage', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/homepage', [HomeController::class, 'index'])->name('homepage');
+// Route::post('/login/store', [LoginController::class, 'store'])->name('account.store');
+Route::get('/login', [LoginController::class, 'login'])->name('account.login');
+// Route::get('/logout', [LoginController::class, 'logout'])->name('account.logout');
+
+Auth::routes();
