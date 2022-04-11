@@ -8,7 +8,8 @@ require('./bootstrap');
 require('slick-carousel');
 require('./main');
 require('jquery');
-
+// import swal from 'sweetalert2/dist/sweetalert2.js';
+import 'sweetalert2/src/sweetalert2.scss';
 window.Vue = require('vue').default;
 
 /**
@@ -33,6 +34,3 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
-
-// import 'slick-carousel'
-// require('./bootstrap');
