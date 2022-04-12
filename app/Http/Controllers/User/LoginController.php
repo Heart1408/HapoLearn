@@ -15,8 +15,8 @@ class LoginController extends Controller
     public function login(LoginRequest $request)
     {
         $data = [
-            'email' => $request['username'],
-            'password' => $request['password'],
+            'email' => $request['login_username'],
+            'password' => $request['login_password'],
         ];
 
         if ($request->validated()) {
@@ -34,8 +34,6 @@ class LoginController extends Controller
     public function logout(Request $request)
     {
         Auth::logout();
-        // $request->session()->invalidate();
-        // $request->session()->regenerateToken();
         return redirect(route('homepage'));
     }
 }

@@ -11,16 +11,16 @@
             <form class="form-container login-form active-form" id="loginForm" action="{{ route('login') }}" method="POST">
                 @csrf
                 <label class="textfield" for="username">Username:</label>
-                <input class="form-control @error('username') is-invalid @enderror" id="username" type="text" name="username" value="{{ old('username') }}">
+                <input class="form-control @error('login_username') is-invalid @enderror" id="username" type="text" name="login_username" value="{{ old('login_username') }}">
                 <label class="text-danger form-label custom-label font-weight-bold">
-                    @error('username')
+                    @error('login_username')
                         {{ $message }}
                     @enderror
                 </label>
                 <label class="textfield" for="password">Password:</label>
-                <input class="form-control @error('password') is-invalid @enderror" id="password" type="password" name="password">
+                <input class="form-control @error('login_password') is-invalid @enderror" id="password" type="password" name="login_password">
                 <label class="text-danger form-label custom-label font-weight-bold">
-                    @error('password')
+                    @error('login_password')
                         {{ $message }}
                     @enderror
                 </label>
@@ -43,23 +43,23 @@
             <form class="form-container register-form" id="registerForm" action="{{ route('register') }}" method="POST">
                 @csrf
                 <label class="textfield" for="username">Username:</label>
-                <input id="username" type="text" class="form-control @error('username_register') is-invalid @enderror" name="username_register" value="{{ old('username_register') }}">
+                <input id="username" type="text" class="form-control @error('register_username') is-invalid @enderror" name="register_username" value="{{ old('register_username') }}">
                 <label class="text-danger form-label custom-label font-weight-bold">
-                    @error('username_register')
+                    @error('register_username')
                         {{ $message }}
                     @enderror
                 </label>
                 <label class="textfield" for="email">Email:</label>
-                <input id="email" type="text"  class="form-control @error('email_register') is-invalid @enderror" name="email_register" value="{{ old('email_register') }}">
+                <input id="email" type="text"  class="form-control @error('register_email') is-invalid @enderror" name="register_email" value="{{ old('register_email') }}">
                 <label class="text-danger form-label custom-label font-weight-bold">
-                    @error('email_register')
+                    @error('register_email')
                         {{ $message }}
                     @enderror
                 </label>
                 <label class="textfield" for="password">Password:</label>
-                <input id="password" type="password" class="form-control @error('password_register') is-invalid @enderror" name="password_register">
+                <input id="password" type="password" class="form-control @error('register_password') is-invalid @enderror" name="register_password">
                 <label class="text-danger form-label custom-label font-weight-bold">
-                    @error('password_register')
+                    @error('register_password')
                         {{ $message }}
                     @enderror
                 </label>

@@ -25,11 +25,11 @@ class RegisterRequest extends FormRequest
     public function rules()
     {
         return [
-            'username_register' => ['required'],
-            'email_register' => [
+            'register_username' => ['required'],
+            'register_email' => [
                 'required','email'
             ],
-            'password_register' => 'required',
+            'register_password' => 'required|min:3',
             'repeatpass' => 'required|same:password_register',
         ];
     }
@@ -37,9 +37,10 @@ class RegisterRequest extends FormRequest
     public function messages()
     {
         return [
-            'username_register.required' => 'Enter your username',
-            'username_register.email' => 'Enter your email',
-            'password_register.required' => 'Enter your password',
+            'register_username.required' => 'Enter your username',
+            'register_username.email' => 'Enter your email',
+            'register_password.required' => 'Enter your password',
+            'register_password.min' => 'Password must be longer than 3 characters',
             'repeatpass.required' => 'Enter your confirm password',
             'repeatpass.same' => 'Passwords do not match',
         ];
