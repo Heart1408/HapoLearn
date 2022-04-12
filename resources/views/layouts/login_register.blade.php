@@ -11,19 +11,9 @@
             <form class="form-container login-form active-form" id="loginForm" action="{{ route('login') }}" method="POST">
                 @csrf
                 <label class="textfield" for="username">Username:</label>
-                <input class="form-control @error('username') is-invalid @enderror" id="username" type="text" name="username" value="{{ old('username') }}">
-                <label class="text-danger form-label custom-label font-weight-bold">
-                    @error('username')
-                        {{ $message }}
-                    @enderror
-                </label>
+                <input id="username" name="username" type="text">
                 <label class="textfield" for="password">Password:</label>
-                <input class="form-control @error('password') is-invalid @enderror" id="password" type="password" name="password">
-                <label class="text-danger form-label custom-label font-weight-bold">
-                    @error('password')
-                        {{ $message }}
-                    @enderror
-                </label>
+                <input id="password" name="password" type="password">
                 <div class="roww">
                     <div class="remember-me">
                         <label for="rememberMe">

@@ -1,10 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\User\LoginController;
-use App\Http\Controllers\User\RegisterController;
+use App\Http\Controllers\LoginController;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +19,4 @@ use App\Http\Controllers\User\RegisterController;
 Route::get('/', [HomeController::class, 'index'])->name('homepage');
 Route::get('/home', [HomeController::class, 'index'])->name('homepage');
 
-Route::post('/login', [LoginController::class, 'login'])->name('login');
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-Route::post('/register', [RegisterController::class, 'store'])->name('register');
-// Auth::routes();
+Auth::routes();
