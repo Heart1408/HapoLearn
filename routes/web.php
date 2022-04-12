@@ -1,9 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\LoginController;
-use App\Models\User;
+use App\Http\Controllers\User\LoginController;
+use App\Http\Controllers\User\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,14 +17,10 @@ use App\Models\User;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index'])->name('homepage');
+Route::get('/home', [HomeController::class, 'index'])->name('homepage');
 
-
-Route::get('/homepage', [HomeController::class, 'index'])->name('homepage');
-// Route::post('/login/store', [LoginController::class, 'store'])->name('account.store');
-Route::get('/login', [LoginController::class, 'login'])->name('account.login');
-// Route::get('/logout', [LoginController::class, 'logout'])->name('account.logout');
-
-Auth::routes();
+Route::post('/login', [LoginController::class, 'login'])->name('login');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::post('/register', [RegisterController::class, 'store'])->name('register');
+// Auth::routes();
