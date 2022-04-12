@@ -1,0 +1,286 @@
+.why-hapo-learn {
+  position: relative;
+  background-image: url("https://scontent.fhan2-2.fna.fbcdn.net/v/t1.15752-9/275312003_515162936787208_5903099052690634795_n.png?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_ohc=RXevyYDMsQUAX9HCTbn&_nc_ht=scontent.fhan2-2.fna&oh=03_AVI7gvcchACHxy37igOa4GH5vnjkl55BdsLfF1F6JUt7iQ&oe=625FADF0");  
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 120px;
+  font-family: $font-utm;
+  color: $white;
+}
+
+.why-hapo-learn-top {
+  position: absolute;
+
+  .top-img {
+    width: 460px;
+
+    img {
+      margin-top: -250px;
+      width: 100%;
+    }
+  }
+
+  .active {
+    display: none;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  height: 900px;
+
+  .why-hapo-learn-list {
+    flex: 5;
+  }
+
+  .container {
+    width: 650px;
+    padding: 0;
+    margin-top: 120px;
+
+    .title {
+      font-size: 7.5rem;
+      font-weight: bold;
+      color: $white;
+    }
+
+    p {
+      font-size: 1.8rem;
+      letter-spacing: -0.05em;
+      padding-top: 27px;
+      color: rgb(196, 194, 193);
+    }
+
+    i {
+      font-size: 2.2rem;
+      padding-right: 10px;
+      color: rgb(242, 242, 242);
+    }
+  }
+
+  .img {
+    flex: 5;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .why-hapo-learn-top {
+    .top-img {
+      width: 360px;
+  
+      img {
+        margin-top: -200px;
+      }
+    }
+  }
+  
+  .content {
+    height: 750px;
+  
+    .container {
+      float: right;
+      width: 500px;
+      margin-top: 200px;
+  
+      .title {
+        font-size: 4.5rem;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        padding-top: 10px;
+      }
+  
+      i {
+        font-size: 1.6rem;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .why-hapo-learn-top {
+    .top-img {
+      width: 330px;
+  
+      img {
+        margin-top: -180px;
+      }
+    }
+  }
+  
+  .content {
+    height: 650px;
+
+    .container {
+      width: 460px;
+  
+      .title {
+        font-size: 4rem;
+        line-height: 60px;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        padding-top: 10px;
+      }
+    }
+  
+    .img {
+      flex: 5;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .why-hapo-learn-top {
+    display: flex;
+
+    .top-img {
+      width: 260px;
+
+      img {
+        margin-top: -145px;
+      }
+    }
+
+    .active {
+      display: block;
+      font-size: 3.8rem;
+      font-weight: bold;
+      margin-top: 50px;
+      margin-left: -30px;
+    }
+  }
+
+  .content {
+    height: 450px;
+
+    .container {
+      width: 420px;
+
+      .title {
+        display: none;
+      }
+
+      p {
+        font-size: 1rem;
+        padding-top: 7px;
+      }
+    }
+
+    .img {
+      flex: 4;
+      margin-top: 180px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .why-hapo-learn-top {
+    .top-img {
+      width: 240px;
+
+      img {
+        margin-top: -130px;
+      }
+    }
+
+    .active {
+      font-size: 3.2rem;
+      margin-left: -40px;
+      margin-top: 30px;
+    }
+  }
+
+  .content {
+    height: 400px;
+
+    .container {
+      width: 360px;
+      margin-top: 150px;
+
+      p {
+        font-size: 0.8rem;
+        padding-top: 5px;
+      }
+
+      i {
+        font-size: 1.4rem;
+      }
+    }
+
+    .img {
+      margin-top: 150px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .why-hapo-learn-top {
+    .top-img {
+      width: 220px;
+
+      img {
+        margin-top: -120px;
+      }
+    }
+
+    .active {
+      width: 250px;
+      margin-top: 20px;
+      margin-left: -50px;
+      line-height: 60px;
+      font-size: 3rem;
+    }
+  }
+
+  .content {
+      flex-direction: column;
+      height: 630px;
+
+    .container {
+      text-align: center;
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+
+    .img {
+      width: 380px;
+      margin: auto;
+      margin-top: -25px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .why-hapo-learn-top {
+    .top-img {
+      width: 200px;
+
+      img {
+        margin-top: -107px;
+      }
+    }
+
+    .active {
+      width: 200px;
+      font-size: 2.8rem;
+    }
+  }
+
+  .content {
+    .img {
+      margin-top: 0px;
+    }
+  }
+}

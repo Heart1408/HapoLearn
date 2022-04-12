@@ -3,9 +3,13 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
+ 
 require('./bootstrap');
-
+require('slick-carousel');
+require('./main');
+require('jquery');
+// import swal from 'sweetalert2/dist/sweetalert2.js';
+import 'sweetalert2/src/sweetalert2.scss';
 window.Vue = require('vue').default;
 
 /**
