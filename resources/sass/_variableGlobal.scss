@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+$color-text: #11114e;
+$brown-color: #505353;
+$theme-color: #b2d235;
+$dark-green: #72852a;
+$white: #ffffff;
+$w3-background-color: #3f6185;
+$red-color: #dc594c;
+$php-background-color: #556598;
+$css-background-color: #24abe2;
+$rails-background-color: #e14e40;
+$java-background-color: #1b75bb;
+
+$font-poppins: "Poppins", sans-serif;
+$font-open-sans: "Open Sans", sans-serif;
+$font-utm: 'Varela Round', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-style: normal;
+  background-color: $theme-color;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+}
+
+@mixin a {
+  font-size: 1.3rem;
+  padding: 9px 17px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: $brown-color;
+  font-weight: bold;
+
+  &:active,
+  &:hover {
+    background: $theme-color;
+    transition: 0.1s;
+    color: $white;
+  }
+}

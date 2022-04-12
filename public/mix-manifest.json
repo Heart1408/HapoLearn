@@ -1,18 +1,4 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css",
-    "/images/avatar.png": "/images/avatar.png",
-    "/images/css_logo.png": "/images/css_logo.png",
-    "/images/hapo_icon.png": "/images/hapo_icon.png",
-    "/images/hapo_learn_banner.png": "/images/hapo_learn_banner.png",
-    "/images/hapo_learn_logo.png": "/images/hapo_learn_logo.png",
-    "/images/hapo_learn_logo_white.png": "/images/hapo_learn_logo_white.png",
-    "/images/hapo_message_icon.png": "/images/hapo_message_icon.png",
-    "/images/java_logo.png": "/images/java_logo.png",
-    "/images/laptop.png": "/images/laptop.png",
-    "/images/laravel_logo.png": "/images/laravel_logo.png",
-    "/images/php_logo.png": "/images/php_logo.png",
-    "/images/rails_logo.png": "/images/rails_logo.png",
-    "/images/small_lap.png": "/images/small_lap.png",
-    "/images/w3_logo.png": "/images/w3_logo.png"
+    "/app/public/js/app.js": "/app/public/js/app.js",
+    "/app/public/css/app.css": "/app/public/css/app.css"
 }

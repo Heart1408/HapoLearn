@@ -1,0 +1,373 @@
+.list-course,
+.orther-courses-list {
+  font-family: $font-utm;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: -120px;
+  padding-bottom: 60px;
+
+  .course-card {
+    flex: 1;
+    background-color: $white;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+    .w3-logo {
+      background-color: $w3-background-color;
+    }
+
+    .laravel-logo {
+      background-color: $red-color;
+    }
+
+    .php-logo {
+      background-color: $php-background-color;
+    }
+
+    .css-logo {
+      background-color: $css-background-color;
+    }
+
+    .rails-logo {
+      background-color: $rails-background-color;
+    }
+
+    .java-logo {
+      background-color: $java-background-color;
+    }
+
+    .title {
+      color: $theme-color;
+      -webkit-text-stroke: 1px #D2D235;
+      text-align: center;
+      font-weight: normal;
+      font-style: normal;
+      padding-top: 25px;
+      font-size: 2.4rem;
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 1;
+      height: 80px;
+      line-height: 60px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
+
+    .content {
+      color: $brown-color;
+      padding: 0px 20px;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 40px;
+      -webkit-line-clamp: 3;
+      height: 120px;
+      font-size: 1.6rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
+
+    button {
+      height: 50px;
+      width: 240px;
+      margin: auto;
+      margin-bottom: 30px;
+      font-size: 1.4rem;
+      font-weight: normal;
+      box-shadow: inset 0px 1.5px 2px #6F8710;
+      @include button;
+    }
+  }
+
+  .course-card-logo {
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    height: 300px;
+
+    .img {
+      width: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .img img {
+      width: 100%;
+    }
+  }
+}
+
+.orther-courses {
+  .other-courses-title {
+    font-weight: bold;
+    color: $color-text;
+    margin-bottom: 180px;
+    margin-top: 50px;
+
+    p {
+      font-family: $font-utm;
+      margin: auto;
+      border-bottom: 6px solid $theme-color;
+      letter-spacing: -0.02em;
+      line-height: 100px;
+      font-size: 6.2rem;
+      width: 460px;
+    }
+  }
+
+  .other-courses-link {
+    font-family: $font-utm;
+    display: block;
+    color: $theme-color;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3.2rem;
+    margin-top: -10px;
+
+    &:hover {
+      font-size: 3.2rem;
+      color: $dark-green;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .list-course,
+  .orther-courses-list {
+    margin-top: -90px;
+
+    .course-card {
+      .title {
+        padding-top: 15px;
+        font-size: 2.4rem;
+      }
+
+      .content {
+        padding: 0px 15px;
+        line-height: 25px;
+        font-size: 1.2rem;
+        -webkit-line-clamp: 3;
+        height: 80px;
+      }
+
+      button {
+        height: 40px;
+        width: 200px;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+      }
+    }
+
+    .course-card-logo {
+      height: 200px;
+
+      .img {
+        width: 200px;
+      }
+    }
+  }
+
+  .orther-courses {
+    .other-courses-title {
+      margin-bottom: 130px;
+      margin-top: 20px;
+    }
+
+    .other-courses-link {
+      margin-top: -15px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .list-course,
+  .orther-courses-list {
+    width: unset;
+    padding: 50px;
+    padding-top: 0;
+
+    .course-card {
+      margin: 10px;
+
+      .title {
+        padding-top: 10px;
+        font-size: 2rem;
+        height: 60px;
+        line-height: 50px;
+      }
+
+      .content {
+        padding: 0px 10px;
+        font-size: 1.2rem;
+        line-height: 23px;
+        height: 70px;
+      }
+
+      button {
+        height: 38px;
+        width: 190px;
+        margin-bottom: 25px;
+        font-size: 1.2rem;
+      }
+    }
+
+    .course-card-logo {
+      height: 180px;
+  
+      .img {
+        width: 180px;
+      }
+    }
+  }
+
+  .orther-courses {
+    .other-courses-title p {
+      border-bottom: 4px solid $theme-color;
+      font-size: 4.2rem;
+      line-height: 60px;
+      width: 302px;
+    }
+
+    .other-courses-link {
+      font-size: 2.4rem;
+      margin-top: 10px;
+  
+      &:hover {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .list-course,
+  .orther-courses-list {
+    padding: 20px;
+
+    .course-card-logo {
+      height: 150px;
+  
+      .img {
+        width: 160px;
+      }
+    }
+
+    .course-card {
+      .title {
+        font-size: 1.4rem;
+      }
+
+      button {
+        height: 35px;
+        width: 180px;
+        margin-bottom: 25px;
+      }
+    } 
+  }
+}
+
+@media (max-width: 768px) {
+  .list-course,
+  .orther-courses-list {
+    padding-top: 15px;
+
+    .course-card {
+      margin: 5px;
+
+      .title {
+        font-size: 1.2rem;
+      }
+
+      .content {
+        padding: 5px;
+        padding-top: 3px;
+        font-size: 1rem;
+        line-height: 20px;
+        height: 60px;
+      }
+
+      button {
+        height: 32px;
+        width: 160px;
+        font-size: 1rem;
+      }
+    }
+
+    .course-card-logo {
+      height: 130px;
+  
+      .img {
+        width: 120px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .list-course,
+  .orther-courses-list {
+    flex-direction: column;
+    margin-top: -50px;
+
+    .course-card {
+      width: 320px;
+      margin: auto;
+      margin-bottom: 40px;
+
+      .title {
+        padding-top: 15px;
+        font-size: 2rem;
+      }
+
+      .content {
+        padding: 5px 20px;
+        font-size: 1rem;
+        line-height: 22px;
+        height: 70px;
+      }
+
+      button {
+        height: 40px;
+        width: 200px;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+      }
+    }
+
+    .course-card-logo {
+      height: 200px;
+  
+      .img {
+        width: 200px;
+      }
+    }
+  }
+
+  .orther-courses {
+    .other-courses-title {
+      margin-bottom: 65px;
+
+      p {
+        font-size: 3.3rem;
+        width: 255px;
+        line-height: 55px;
+        border-bottom: 3px solid $theme-color;
+      }
+    }
+
+    .other-courses-link {
+      font-size: 1.8rem;
+      margin-top: -15px;
+
+      &:hover {
+        font-size: 2rem;
+        color: $dark-green;
+      }
+    }
+  }
+}
