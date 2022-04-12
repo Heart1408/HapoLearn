@@ -8,7 +8,8 @@
                 <button class="active" id="openLoginFormBtn">LOGIN</button>
                 <button id="openRegisterFormBtn">REGISTER</button>
             </div>
-            <form class="form-container login-form active-form" id="loginForm">
+            <form class="form-container login-form active-form" id="loginForm" action="{{ route('login') }}" method="POST">
+                @csrf
                 <label class="textfield" for="username">Username:</label>
                 <input id="username" name="username" type="text">
                 <label class="textfield" for="password">Password:</label>
@@ -29,15 +30,36 @@
                 <button class="login-width-gg-btn"><i class="fa-brands fa-google-plus-g"></i>Google</button>
                 <button class="login-width-fb-btn"><i class="fa-brands fa-facebook-f"></i>Facebook</button>
             </form>
-            <form class="form-container register-form" id="registerForm">
+            <form class="form-container register-form" id="registerForm" action="{{ route('register') }}" method="POST">
+                @csrf
                 <label class="textfield" for="username">Username:</label>
-                <input id="username" type="text">
+                <input id="username" type="text" class="form-control @error('username_register') is-invalid @enderror" name="username_register" value="{{ old('username_register') }}">
+                <label class="text-danger form-label custom-label font-weight-bold">
+                    @error('username_register')
+                        {{ $message }}
+                    @enderror
+                </label>
                 <label class="textfield" for="email">Email:</label>
-                <input id="email" type="text">
+                <input id="email" type="text"  class="form-control @error('email_register') is-invalid @enderror" name="email_register" value="{{ old('email_register') }}">
+                <label class="text-danger form-label custom-label font-weight-bold">
+                    @error('email_register')
+                        {{ $message }}
+                    @enderror
+                </label>
                 <label class="textfield" for="password">Password:</label>
-                <input id="password" type="password">
+                <input id="password" type="password" class="form-control @error('password_register') is-invalid @enderror" name="password_register">
+                <label class="text-danger form-label custom-label font-weight-bold">
+                    @error('password_register')
+                        {{ $message }}
+                    @enderror
+                </label>
                 <label class="textfield" for="repeatPassword">Repeat Password:</label>
-                <input id="repeatPassword" type="password">
+                <input id="repeatPassword" type="password" class="form-control @error('repeatpass') is-invalid @enderror" name="repeatpass">
+                <label class="text-danger form-label custom-label font-weight-bold">
+                    @error('repeatpass')
+                        {{ $message }}
+                    @enderror
+                </label>
                 <button class="submit-form-btn">REGISTER</button>
                 <div class="form-bottom"></div>
             </form>

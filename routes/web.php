@@ -16,14 +16,7 @@ use App\Models\User;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-Route::get('/homepage', [HomeController::class, 'index'])->name('homepage');
-// Route::post('/login/store', [LoginController::class, 'store'])->name('account.store');
-Route::get('/login', [LoginController::class, 'login'])->name('account.login');
-// Route::get('/logout', [LoginController::class, 'logout'])->name('account.logout');
+Route::get('/', [HomeController::class, 'index'])->name('homepage');
+Route::get('/home', [HomeController::class, 'index'])->name('homepage');
 
 Auth::routes();

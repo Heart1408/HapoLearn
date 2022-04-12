@@ -29,6 +29,18 @@ $(document).ready(function () {
     $('#loginRegisterForm').removeClass('active-form');
   })
 
+  if($('#loginForm input').hasClass('is-invalid')) {
+    $('#loginRegisterForm').addClass('active-form');
+  }
+
+  if($('#registerForm input').hasClass('is-invalid')) {
+    $('#loginRegisterForm').addClass('active-form');
+    $('#openRegisterFormBtn').addClass('active');
+    $('#openLoginFormBtn').removeClass('active');
+    $('#registerForm').css('display', 'block');
+    $('#loginForm').css('display', 'none');
+  }
+
   $('#openLoginFormBtn').click(function () {
     $('#loginForm').css('display', 'block');
     $('#registerForm').css('display', 'none');

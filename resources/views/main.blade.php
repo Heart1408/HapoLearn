@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>HapoLearn</title>
+    
 </head>
 
 <body>
@@ -19,6 +20,7 @@
     @include('layouts.messenger')
     
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
 </body>
 
 </html>
