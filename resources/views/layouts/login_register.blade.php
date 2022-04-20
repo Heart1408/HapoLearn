@@ -64,9 +64,9 @@
                     @enderror
                 </label>
                 <label class="textfield" for="repeatPassword">Repeat Password:</label>
-                <input id="repeatPassword" type="password" class="form-control @error('repeatpass') is-invalid @enderror" name="repeatpass">
+                <input id="repeatPassword" type="password" class="form-control @error('confirm_password') is-invalid @enderror" name="confirm_password">
                 <label class="text-danger form-label custom-label font-weight-bold">
-                    @error('repeatpass')
+                    @error('confirm_password')
                         {{ $message }}
                     @enderror
                 </label>

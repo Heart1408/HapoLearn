@@ -18,7 +18,7 @@ class CourseController extends Controller
     {
         $data = $request->all();
         $courses = Course::query()->search($data)->paginate(10);
-        $teachers = User::where('role', User::ROLE['teacher'])->get();
+        $teachers = User::teacher()->get();
         $tags = Tag::get();
         return view('courses.index', compact('courses', 'teachers', 'tags'));
     }

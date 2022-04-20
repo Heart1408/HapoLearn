@@ -11,9 +11,9 @@
             <div class="filter row" id="filter">
                 <p class="title">Lọc theo</p>
                 <div class="row container">
-                    <input type="radio" name="status" id="new-status" value="newest" {{ request('status') == 'newest' ? 'checked' : '' }}>
+                    <input type="radio" name="status" id="new-status" value="desc" {{ request('status') == 'desc' ? 'checked' : '' }}>
                     <label class="status-btn btn-newest active" for="new-status">Mới nhất</label>
-                    <input type="radio" name="status" id="old-status" value="oldest" {{ request('status') == 'oldest' ? 'checked' : '' }}>
+                    <input type="radio" name="status" id="old-status" value="asc" {{ request('status') == 'asc' ? 'checked' : '' }}>
                     <label class="status-btn btn-oldest" for="old-status">Cũ nhất</label>
                     <select name="teacher" id="teacher">
                         <option value="" {{ request('teacher') ? 'selected' : '' }}>Teacher</option>

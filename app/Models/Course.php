@@ -76,11 +76,7 @@ class Course extends Model
         }
 
         if (isset($data['status'])) {
-            if ($data['status'] == 'newest') {
-                $query->orderBy('courses.id', config('course.orderBy.desc'));
-            } else {
-                $query->orderBy('courses.id', config('course.orderBy.asc'));
-            }
+            $query->orderBy('courses.id', $data['status']);
         }
 
         if (isset($data['teacher'])) {

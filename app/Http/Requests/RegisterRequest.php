@@ -30,7 +30,7 @@ class RegisterRequest extends FormRequest
                 'required','email'
             ],
             'register_password' => 'required|min:3',
-            'repeatpass' => 'required|same:register_password',
+            'confirm_password' => 'required|same:register_password',
         ];
     }
 
@@ -41,8 +41,8 @@ class RegisterRequest extends FormRequest
             'register_username.email' => 'Enter your email',
             'register_password.required' => 'Enter your password',
             'register_password.min' => 'Password must be longer than 3 characters',
-            'repeatpass.required' => 'Enter your confirm password',
-            'repeatpass.same' => 'Passwords do not match',
+            'confirm_password.required' => 'Enter your confirm password',
+            'confirm_password.same' => 'Passwords do not match',
         ];
     }
 }
