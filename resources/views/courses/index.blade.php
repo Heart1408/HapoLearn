@@ -16,23 +16,23 @@
                     <input type="radio" name="status" id="old-status" value="oldest" {{ request('status') == 'oldest' ? 'checked' : '' }}>
                     <label class="status-btn btn-oldest" for="old-status">Cũ nhất</label>
                     <select name="teacher" id="teacher">
-                        <option value="" {{ request('teacher') ? '' : 'selected' }}>Teacher</option>
+                        <option value="" {{ request('teacher') ? 'selected' : '' }}>Teacher</option>
                         @foreach ($teachers as $teacher)
                             <option value="{{ $teacher->id }}" {{ request('teacher') == $teacher->id ? 'selected' : '' }}>{{ $teacher->name }}</option>
                         @endforeach
                     </select>
                     <select name="number_learner" id="">
-                        <option value="" {{ request('number_learner') ? '' : 'selected' }}>Số người học</option>
+                        <option value="" {{ request('number_learner') ? 'selected' : '' }}>Số người học</option>
                         <option value="asc" {{ request('number_learner') == 'asc' ? 'selected' : '' }}>Tăng dần</option>
                         <option value="desc" {{ request('number_learner') == 'desc' ? 'selected' : '' }}>Giảm dần</option>
                     </select>
                     <select name="time" id="">
-                        <option value="" {{ request('time') ? '' : 'selected' }}>Thời gian học</option>
+                        <option value="" {{ request('time') ? 'selected' : '' }}>Thời gian học</option>
                         <option value="asc" {{ request('time') == 'asc' ? 'selected' : '' }}>Tăng dần</option>
                         <option value="desc" {{ request('time') == 'desc' ? 'selected' : '' }}>Giảm dần</option> 
                     </select>
                     <select name="number_lesson" id="">
-                        <option value="" {{ request('number_lesson') ? '' : 'selected' }}>Số bài học</option>
+                        <option value="" {{ request('number_lesson') ? 'selected' : '' }}>Số bài học</option>
                         <option value="asc" {{ request('number_lesson') == 'asc' ? 'selected' : '' }}>Tăng dần</option>
                         <option value="desc" {{ request('number_lesson') == 'desc' ? 'selected' : '' }}>Giảm dần</option>
                     </select>
