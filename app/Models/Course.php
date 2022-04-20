@@ -50,7 +50,6 @@ class Course extends Model
 
     public function getTotalLearnerAttribute()
     {
-
         return $this->students()->count();
     }
 
@@ -78,9 +77,9 @@ class Course extends Model
 
         if (isset($data['status'])) {
             if ($data['status'] == 'newest') {
-                $query->orderBy('courses.id', 'desc');
+                $query->orderBy('courses.id', config('course.orderBy.desc'));
             } else {
-                $query->orderBy('courses.id', 'asc');
+                $query->orderBy('courses.id', config('course.orderBy.asc'));
             }
         }
 
