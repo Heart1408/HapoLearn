@@ -11,9 +11,10 @@ class Lesson extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'lesson_id',
-        'name',
-        'link',
+        'course_id',
+        'description',
+        'requirement',
+        'time',
     ];
 
     public function users()
@@ -24,5 +25,10 @@ class Lesson extends Model
     public function documents()
     {
         return $this->hasMany(Document::class);
+    }
+
+    public function course()
+    {
+        return $this->belongsTo(Course::class);
     }
 }

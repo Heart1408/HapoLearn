@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class User extends Authenticatable
 {
     use HasFactory, Notifiable, SoftDeletes;
-    const ROLE = 1;
+    const ROLE = ['student' => 1, 'teacher' => 2];
 
     /**
      * The attributes that are mass assignable.
@@ -28,6 +28,8 @@ class User extends Authenticatable
         'address',
         'birthday',
         'avartar',
+        'role',
+        'job',
         'remember_token',
     ];
 

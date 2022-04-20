@@ -2023,6 +2023,9 @@ $(document).ready(function () {
     $('#message').removeClass('open-message');
   });
   $('[data-toggle="tooltip"]').tooltip();
+  $('#filter-btn').click(function () {
+    $('#filter').toggleClass('show-filter');
+  });
 });
 
 /***/ }),

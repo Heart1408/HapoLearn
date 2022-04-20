@@ -30,7 +30,7 @@ class RegisterRequest extends FormRequest
                 'required','email'
             ],
             'register_password' => 'required|min:3',
-            'repeatpass' => 'required|same:password_register',
+            'repeatpass' => 'required|same:register_password',
         ];
     }
 

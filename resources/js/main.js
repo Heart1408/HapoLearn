@@ -64,4 +64,9 @@ $(document).ready(function () {
   })
 
   $('[data-toggle="tooltip"]').tooltip();
+
+  $('#filter-btn').click(function () {
+    $('#filter').toggleClass('show-filter');
+  })
+
 });

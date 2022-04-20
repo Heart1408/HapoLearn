@@ -22603,3 +22603,139 @@ readers do not read off random characters that represent icons */
     padding: 5px;
   }
 }
+.list_course_page {
+  width: 90%;
+  margin: auto;
+}
+
+.list_course_header {
+  margin: 10px;
+}
+.list_course_header .search {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.list_course_header .search button,
+.list_course_header .search input {
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  margin-right: 15px;
+  padding: 5px 10px;
+}
+.list_course_header .search .search-btn {
+  background-color: #b2d235;
+  color: #ffffff;
+}
+.list_course_header .filter {
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  flex-wrap: unset;
+  padding: 10px;
+}
+.list_course_header .filter .title {
+  min-width: 65px;
+  font-weight: bold;
+}
+
+.filter {
+  display: none;
+}
+.filter .container button,
+.filter .container select,
+.filter .container option {
+  background: #FFFFFF;
+  border: 1px solid #E5E6E7;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 3px 8px;
+  margin-left: 5px;
+  margin-bottom: 8px;
+}
+.filter .container .active {
+  background-color: #b2d235;
+  color: #ffffff;
+}
+.filter .container input[type=radio] {
+  display: none;
+}
+.filter .container .status-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 35px;
+  margin-left: 10px;
+  border: 1px solid #b6b4b4;
+  cursor: pointer;
+}
+.filter .container .status-btn:hover {
+  background-color: #b2d235;
+  color: #ffffff;
+}
+
+.list_course .course-card {
+  padding: 12px 10px;
+}
+.list_course .course-card .container {
+  background: #FFFFFF;
+  border: 1px solid #F1F1F1;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.course-content {
+  padding: 15px;
+  flex-wrap: unset;
+}
+.course-content .img {
+  width: 350px;
+}
+.course-content .img img {
+  width: 100%;
+}
+.course-content .course-content-desc {
+  padding-left: 15px;
+}
+.course-content .course-content-desc .title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.course-content .course-content-desc .desc {
+  padding-right: 30px;
+}
+.course-content .course-content-desc button {
+  height: 40px;
+  width: 100px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  box-shadow: inset 0px 1.5px 2px #6F8710;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-style: normal;
+  background-color: #b2d235;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+}
+.course-content .course-content-desc button:hover {
+  background-color: #72852a;
+}
+
+.course-card-bottom {
+  justify-content: space-between;
+  flex-wrap: unset;
+  border-top: 1px solid #F1F1F1;
+}
+.course-card-bottom .statistic {
+  margin: 20px;
+}
+
+.show-filter {
+  display: block;
+}

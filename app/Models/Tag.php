@@ -11,10 +11,8 @@ class Tag extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'course_id',
-        'user_id',
-        'rate',
-        'comment',
+        'name',
+        'link',
     ];
 
     public function courses()
