@@ -24,4 +24,4 @@ Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::post('/register', [RegisterController::class, 'store'])->name('register');
 
-Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
+Route::resource('courses', CourseController::class);
