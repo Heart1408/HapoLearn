@@ -27,8 +27,8 @@ class CourseController extends Controller
     {
         $data = $request->all();
         $course = Course::with('teachers', 'reviews', 'tags')->find($id);
-        $otherCourses = Course::inRandomOrder()->take(5)->get();
-        $lessons = Lesson::getLessons($data, $id)->paginate(5);
+        $otherCourses = Course::inRandomOrder()->take(config('course.random'))->get();
+        $lessons = Lesson::getLessons($data, $id)->paginate(config('course.pagination'));
         return view('courses.detail_course', compact('course', 'lessons', 'otherCourses'));
     }
 }

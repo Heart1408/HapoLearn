@@ -15,7 +15,7 @@ class LessonController extends Controller
     {
         $lesson = Lesson::find($id);
         $course = Course::with('tags')->find($courseId);
-        $otherCourses = Course::inRandomOrder()->take(5)->get();
+        $otherCourses = Course::inRandomOrder()->take(config('course.random'))->get();
         return view('lessons.show', compact('lesson', 'course', 'otherCourses'));
     }
 }

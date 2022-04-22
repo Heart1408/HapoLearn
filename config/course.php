@@ -6,4 +6,6 @@ return [
     ],
 
     'pagination' => 10,
+
+    'random' => 5,
 ];
