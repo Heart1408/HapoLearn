@@ -7,7 +7,7 @@
             <div class="course-content-desc">
                 <p class="title">{{ $course->name }}</p>
                 <p class="desc">{{ $course->description }}</p>
-                <button>More</button>
+                <a href="{{ route('courses.show', $course->id) }}">More</a>
             </div>
         </div>
         <div class="course-card-bottom row">
