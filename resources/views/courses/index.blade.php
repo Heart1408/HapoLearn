@@ -5,7 +5,7 @@
         <form action="{{ route('courses.index') }}" method="get" class="list_course_header">
             <div class="search row">
                 <button type="button" class="btn-filter" id="filter-btn"><i class="fa-solid fa-sliders"></i> Filter</button>
-                <input type="text" placeholder="Search..." name="key" value="{{ request('key') }}">
+                <input type="text" placeholder="Search..." name="search_key" value="{{ request('search_key') }}">
                 <button class="search-btn" type="submit">Tìm kiếm</button>
             </div>
             <div class="filter row" id="filter">

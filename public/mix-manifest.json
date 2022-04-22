@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
     "/images/avatar.png": "/images/avatar.png",
     "/images/css_logo.png": "/images/css_logo.png",
     "/images/hapo_icon.png": "/images/hapo_icon.png",
@@ -13,6 +14,5 @@
     "/images/php_logo.png": "/images/php_logo.png",
     "/images/rails_logo.png": "/images/rails_logo.png",
     "/images/small_lap.png": "/images/small_lap.png",
-    "/images/w3_logo.png": "/images/w3_logo.png",
-    "/css/app.css": "/css/app.css"
+    "/images/w3_logo.png": "/images/w3_logo.png"
 }

@@ -17,7 +17,7 @@ class CourseController extends Controller
     public function index(Request $request)
     {
         $data = $request->all();
-        $courses = Course::query()->search($data)->paginate(10);
+        $courses = Course::query()->search($data)->paginate(config('course.pagination'));
         $teachers = User::teacher()->get();
         $tags = Tag::get();
         return view('courses.index', compact('courses', 'teachers', 'tags'));
