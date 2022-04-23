@@ -74,6 +74,6 @@ class User extends Authenticatable
 
     public function scopeTeacher($query)
     {
-        return $query->where('users.role', User::ROLE['student']);
+        return $query->where('users.role', self::ROLE['student']);
     }
 }

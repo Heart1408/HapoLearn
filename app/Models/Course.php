@@ -5,7 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Support\Facades\DB;
 
 class Course extends Model
 {
@@ -71,12 +70,12 @@ class Course extends Model
     public function scopeSearch($query, $data)
     {
         if (isset($data['search_key'])) {
-            $query->where('courses.name', 'like', '%'. $data['search_key'] .'%')
-                ->orWhere('courses.description', 'like', '%'. $data['search_key'] .'%');
+            $query->where('name', 'like', '%'. $data['search_key'] .'%')
+                ->orWhere('description', 'like', '%'. $data['search_key'] .'%');
         }
 
         if (isset($data['status'])) {
-            $query->orderBy('courses.id', $data['status']);
+            $query->orderBy('id', $data['status']);
         }
 
         if (isset($data['teacher'])) {
