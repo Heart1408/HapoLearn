@@ -1,0 +1,147 @@
+.list_course_page {
+  width: 90%;
+  margin: auto;
+}
+
+.list_course_header {
+  margin: 10px;
+
+  .search {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    button,
+    input {
+      background: #FFFFFF;
+      border: 1px solid #C4C4C4;
+      border-radius: 5px;
+      margin-right: 15px;
+      padding: 5px 10px;
+    }
+
+    .search-btn {
+      background-color: $theme-color;
+      color: $white;
+    }
+  }
+
+  .filter {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    flex-wrap: unset;
+    padding: 10px;
+
+    .title {
+      min-width: 65px;
+      font-weight: bold;
+    }
+  }
+}
+
+.filter {
+  display: none;
+
+  .container {
+    button,
+    select,
+    option {
+      background: #FFFFFF;
+      border: 1px solid #E5E6E7;
+      box-sizing: border-box;
+      border-radius: 2px;
+      padding: 3px 8px;
+      margin-left: 5px;
+      margin-bottom: 8px;
+    }
+
+    .active {
+      background-color: $theme-color;
+      color: $white;
+    }
+
+    input[type='radio'] {
+      display: none;
+    }
+
+    .status-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 35px;
+      margin-left: 10px;
+      border: 1px solid rgb(182, 180, 180);
+      cursor: pointer;
+    }
+
+    .status-btn:hover {
+      background-color: $theme-color;
+      color: $white;
+    }
+  }
+}
+
+.list_course {
+  .course-card {
+    padding: 12px 10px;
+
+    .container {
+      background: #FFFFFF;
+      border: 1px solid #F1F1F1;
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+    }
+  }
+}
+
+.course-content {
+  padding: 15px;
+  flex-wrap: unset;
+
+  .img {
+    width: 350px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .course-content-desc {
+    padding-left: 15px;
+
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      padding-right: 30px;
+    }
+
+    button {
+      height: 40px;
+      width: 100px;
+      font-size: 1.4rem;
+      font-weight: normal;
+      box-shadow: inset 0px 1.5px 2px #6F8710;
+      float: right;
+      @include button;
+    }
+  }
+}
+
+.course-card-bottom {
+  justify-content: space-between;
+  flex-wrap: unset;
+  border-top: 1px solid #F1F1F1;
+
+  .statistic {
+    margin: 20px;
+  }
+}
+
+.show-filter {
+  display: block;
+}
