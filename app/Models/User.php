@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class User extends Authenticatable
 {
     use HasFactory, Notifiable, SoftDeletes;
+    const ROLE = ['student' => 1, 'teacher' => 2];
 
     /**
      * The attributes that are mass assignable.
@@ -27,6 +28,8 @@ class User extends Authenticatable
         'address',
         'birthday',
         'avartar',
+        'role',
+        'job',
         'remember_token',
     ];
 
@@ -67,5 +70,10 @@ class User extends Authenticatable
     public function lessons()
     {
         return $this->belongsToMany(Lesson::Class, 'user_lessons', 'user_id', 'lesson_id');
+    }
+
+    public function scopeTeacher($query)
+    {
+        return $query->where('users.role', self::ROLE['student']);
     }
 }
