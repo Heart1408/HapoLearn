@@ -10,7 +10,6 @@ use App\Models\Lesson;
 use App\Models\Tag;
 
 use App\Models\UserCourse;
-use Illuminate\Support\Facades\DB;
 
 class CourseController extends Controller
 {
