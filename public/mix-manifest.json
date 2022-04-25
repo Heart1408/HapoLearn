@@ -3,6 +3,7 @@
     "/css/app.css": "/css/app.css",
     "/images/avatar.png": "/images/avatar.png",
     "/images/css_logo.png": "/images/css_logo.png",
+    "/images/docs.png": "/images/docs.png",
     "/images/hapo_icon.png": "/images/hapo_icon.png",
     "/images/hapo_learn_banner.png": "/images/hapo_learn_banner.png",
     "/images/hapo_learn_logo.png": "/images/hapo_learn_logo.png",
@@ -11,8 +12,10 @@
     "/images/java_logo.png": "/images/java_logo.png",
     "/images/laptop.png": "/images/laptop.png",
     "/images/laravel_logo.png": "/images/laravel_logo.png",
+    "/images/pdf.png": "/images/pdf.png",
     "/images/php_logo.png": "/images/php_logo.png",
     "/images/rails_logo.png": "/images/rails_logo.png",
     "/images/small_lap.png": "/images/small_lap.png",
+    "/images/video.png": "/images/video.png",
     "/images/w3_logo.png": "/images/w3_logo.png"
 }
