@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\DB;
 
 class Course extends Model
 {
@@ -34,7 +35,7 @@ class Course extends Model
 
     public function reviews()
     {
-        return $this->hasMany(Review::class);
+        return $this->belongsToMany(User::class, 'reviews', 'course_id', 'user_id')->withPivot('rate', 'comment', 'updated_at');
     }
 
     public function tags()
@@ -103,5 +104,54 @@ class Course extends Model
         }
 
         return $query;
+    }
+
+    public function scopeJoined($query, $user)
+    {
+        return $query->withCount(['users as user' => function ($query) use ($user) {
+            $query->where('user_id', $user);
+        }]);
+    }
+
+    public static function isJoined($id)
+    {
+        if (Auth()->check()) {
+            $user = Auth()->user()->id;
+            $checkused = Course::Joined($user)->find($id);
+            if ($checkused->user > 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public function scopeGetDataReviews($query)
+    {
+        return $query->withCount([
+            'reviews AS number_review' => function ($query) {
+                $query->select(DB::raw('COUNT(user_id)'));
+            },
+            'reviews AS avg_rate' => function ($query) {
+                $query->select(DB::raw('AVG(rate)'))->where('rate', '<>', null);
+            },
+            'reviews AS total_rating' => function ($query) {
+                $query->select(DB::raw('COUNT(rate)'))->where('rate', '<>', null);
+            },
+            'reviews AS five_star' => function ($query) {
+                $query->select(DB::raw("COUNT('rate')"))->where('rate', 5);
+            },
+            'reviews AS four_star' => function ($query) {
+                $query->select(DB::raw("COUNT('rate')"))->where('rate', 4);
+            },
+            'reviews AS three_star' => function ($query) {
+                $query->select(DB::raw("COUNT('rate')"))->where('rate', 3);
+            },
+            'reviews AS two_star' => function ($query) {
+                $query->select(DB::raw("COUNT('rate')"))->where('rate', 2);
+            },
+            'reviews AS one_star' => function ($query) {
+                $query->select(DB::raw("COUNT('rate')"))->where('rate', 1);
+            }
+        ]);
     }
 }

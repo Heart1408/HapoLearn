@@ -23117,3 +23117,208 @@ readers do not read off random characters that represent icons */
 .other-course-card .all-course-btn:hover {
   background-color: #72852a;
 }
+
+.review {
+  border: 1px solid #e8e6e6;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 15px;
+  padding-bottom: 80px;
+}
+
+.row {
+  display: flex;
+  margin: 0;
+}
+
+.total-review {
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #e8e6e6;
+  color: #505353;
+  font-family: "Varela Round", sans-serif;
+  margin: 25px 0;
+}
+
+.rating {
+  padding-bottom: 25px;
+  border-bottom: 2px solid #e8e6e6;
+}
+.rating .total-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #505353;
+  border-radius: 5px;
+}
+.rating .total-rating .container {
+  display: block;
+  text-align: center;
+}
+.rating .total-rating span {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.rating .total-rating .avg-rate {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 70px;
+}
+.rating .total-rating .star i {
+  font-size: 1.4rem;
+  color: white;
+}
+.rating .rating-detail {
+  padding: 0;
+}
+.rating .rating-detail .container {
+  margin-left: 12px;
+  display: block;
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+  width: 95%;
+  padding: 8px 15px;
+}
+.rating .rating-detail .item-rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.rating .rating-detail .rate-number-text {
+  font-size: 1rem;
+  padding-right: 8px;
+  color: #505353;
+  min-width: 60px;
+  font-weight: bold;
+}
+.rating .rating-detail .progress {
+  width: 80%;
+  height: 10px;
+}
+.rating .rating-detail .progress-bar {
+  background-color: #b2d235;
+}
+.rating .rating-detail .vote-number {
+  color: #9BA1A1;
+  padding-left: 5px;
+}
+
+.list-review {
+  padding: 30px 0;
+}
+.list-review .review-item {
+  border-bottom: 2px solid #e8e6e6;
+  padding: 20px 0;
+  padding-left: 15px;
+}
+.list-review .user-info {
+  display: flex;
+  align-items: center;
+}
+.list-review .avartar {
+  width: 50px;
+  height: 50px;
+}
+.list-review .avartar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+.list-review .name {
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  color: #505353;
+  margin: 0;
+  font-size: 1.2rem;
+  margin: 0 12px;
+}
+.list-review .star {
+  color: #9c9a98;
+}
+.list-review .star i {
+  margin-right: 5px;
+}
+.list-review .time {
+  margin-left: 20px;
+  color: #BDB9B9;
+  font-family: "Varela Round", sans-serif;
+}
+.list-review .review-message {
+  color: #505353;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.review-message {
+  color: #505353;
+  font-family: "Varela Round", sans-serif;
+}
+.review-message .title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.leave-review-link,
+.vote-star .title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #505353;
+  font-family: "Varela Round", sans-serif;
+}
+
+.vote-star .title,
+.vote-star .vote,
+.vote-star .sub-title {
+  margin: 0;
+}
+.vote-star .sub-title {
+  margin-left: 25px;
+  font-size: 1.2rem;
+  font-family: "Varela Round", sans-serif;
+}
+
+.vote .vote-option {
+  display: none;
+}
+.vote label {
+  float: right;
+  padding-left: 5px;
+  font-size: 1.8rem;
+  color: #505353;
+  transition: all 0.2s;
+  margin: 0;
+  cursor: pointer;
+}
+.vote .vote-option:checked ~ label:before {
+  content: "★ ";
+  color: #FFD567;
+  transition: all 0.2s;
+}
+.vote .star-one:checked ~ label:before {
+  color: #f85d1a;
+}
+.vote label:before {
+  content: "☆ ";
+}
+
+.send-review-btn {
+  float: right;
+  border-radius: 100px;
+  padding: 6px 22px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-style: normal;
+  background-color: #b2d235;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+}
+.send-review-btn:hover {
+  background-color: #72852a;
+}

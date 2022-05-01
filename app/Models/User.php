@@ -76,4 +76,9 @@ class User extends Authenticatable
     {
         return $query->where('users.role', self::ROLE['teacher']);
     }
+
+    public function getCourseUser($data)
+    {
+        return $this->courses()->where('course_id', $data)->count();
+    }
 }

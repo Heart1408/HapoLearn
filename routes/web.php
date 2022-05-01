@@ -7,6 +7,7 @@ use App\Http\Controllers\User\LoginController;
 use App\Http\Controllers\User\RegisterController;
 use App\Http\Controllers\User\CourseController;
 use App\Http\Controllers\User\LessonController;
+use App\Http\Controllers\User\ReviewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,12 @@ Route::get('/', [HomeController::class, 'index'])->name('homepage');
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::post('/register', [RegisterController::class, 'store'])->name('register');
+Route::get('/getreviews', [CourseController::class, 'getreviews']);
+Route::resource('courses', CourseController::class)->only('index');
 
-Route::resource('courses', CourseController::class);
-Route::resource('courses.lessons', LessonController::class);
+Route::group(['middleware' => 'checklogin'], function () {
+    Route::resource('courses', CourseController::class)->except('index');
+    Route::resource('courses', CourseController::class)->only('store')->middleware('joincourse');
+    Route::resource('courses.lessons', LessonController::class);
+    Route::resource('reviews', ReviewController::class);
+});
