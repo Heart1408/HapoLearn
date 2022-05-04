@@ -24,24 +24,20 @@
       color: $white;
     }
   }
-
-  .filter {
-    background: #FFFFFF;
-    border: 1px solid #C4C4C4;
-    box-sizing: border-box;
-    border-radius: 5px;
-    flex-wrap: unset;
-    padding: 10px;
-
-    .title {
-      min-width: 65px;
-      font-weight: bold;
-    }
-  }
 }
 
 .filter {
-  display: none;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  flex-wrap: unset;
+  padding: 10px;
+
+  .title {
+    min-width: 65px;
+    font-weight: bold;
+  }
 
   .container {
     button,
@@ -54,6 +50,7 @@
       padding: 3px 8px;
       margin-left: 5px;
       margin-bottom: 8px;
+      outline: none;
     }
 
     .active {
@@ -63,6 +60,11 @@
 
     input[type='radio'] {
       display: none;
+    }
+
+    .status:checked ~ label {
+      color: $white;
+      background-color: $theme-color;
     }
 
     .status-btn {
@@ -143,5 +145,5 @@
 }
 
 .show-filter {
-  display: block;
+  display: none;
 }

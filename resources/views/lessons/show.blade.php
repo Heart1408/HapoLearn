@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="lesson-details">
-        <div class="container">
+        <div class="container row">
             <div class="course-details-left col-12 col-md-9">
                 <div class="img">
                     <img src="{{ $course->logo }}" alt="course-logo-img">
@@ -24,8 +24,16 @@
                             <a class="tab-btn" data-toggle="pill" href="#pills-program" role="tab" aria-selected="false">Program</a>
                         </li>
                     </ul>
+                    <input type="hidden" name="lesson_id" id="lessonId" value="{{ $lesson->id }}">
+                    <div class="learningProgress" style="width: 250px; float: right; margin-top: -60px">
+                        Progress: 25%
+                        <div class="progress" style="width: 100%">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active description" id="pills-desc" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <input type="checkbox" id="checkCompleteDesc">
                             <p class="title">Descriptions Lesson</p>
                             <p class="details">{{ $lesson->description }}</p>
                             <p class="title">Requirements</p>
@@ -47,7 +55,7 @@
                                     </div>
                                     <p class="program-name">Program learn HTML/CSS</p>
                                 </div>
-                                <a class="program-btn" href="#">Preview</a>
+                                <a class="program-btn" id="previewProgramBtn" href="#">Preview</a>
                             </div>
                             <div class="program-list">
                                 <div class="program-list-item">
@@ -57,7 +65,7 @@
                                     </div>
                                     <p class="program-name">Download course slides</p>
                                 </div>
-                                <a class="program-btn" href="#">Preview</a>
+                                <a class="program-btn" id="previewProgramBtn" href="#">Preview</a>
                             </div>
                             <div class="program-list">
                                 <div class="program-list-item">
@@ -67,7 +75,7 @@
                                     </div>
                                     <p class="program-name">Download course videos</p>
                                 </div>
-                                <a class="program-btn" href="#">Preview</a>
+                                <a class="program-btn" id="previewProgramBtn" href="#">Preview</a>
                             </div>
                         </div>
                     </div>
@@ -112,6 +120,7 @@
                         </div>
                         <p class="number">: {{ $course->price }}</p>
                     </div>
+                    <button>Kết thúc khóa học</button>
                 </div>
                 <div class="other-course-card">
                     <div class="title">Other Courses</div>

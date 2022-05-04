@@ -8,6 +8,7 @@ use App\Http\Controllers\User\RegisterController;
 use App\Http\Controllers\User\CourseController;
 use App\Http\Controllers\User\LessonController;
 use App\Http\Controllers\User\ReviewController;
+use App\Http\Controllers\User\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,5 +33,8 @@ Route::group(['middleware' => 'checklogin'], function () {
     Route::resource('courses', CourseController::class)->except('index');
     Route::resource('courses', CourseController::class)->only('store')->middleware('joincourse');
     Route::resource('courses.lessons', LessonController::class);
-    Route::resource('reviews', ReviewController::class);
+    Route::post('/reviews', [ReviewController::class, 'store'])->name('storereviews');
+    Route::get('/getprofile', [UserController::class, 'profile'])->name('getprofile');
+    Route::post('/editprofile', [UserController::class, 'update'])->name('editprofile');
+    Route::post('/updateAvatar', [UserController::class, 'updateAvatar']);
 });

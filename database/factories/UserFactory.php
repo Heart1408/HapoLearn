@@ -32,6 +32,7 @@ class UserFactory extends Factory
             'address' => $this->faker->address(),
             'avartar' => $this->faker->imageUrl(),
             'role' => $this->faker->numberBetween($min = 1, $max = 2),
+            'description' => $this->faker->text()
         ];
     }
 

@@ -45,7 +45,7 @@
                     <a href="#">HOME</a>
                 </li>
                 <li>
-                    <a class="active-menu" href="#">ALL COURSES</a>
+                    <a class="active-menu" href="{{ route('courses.index') }}">ALL COURSES</a>
                 </li>
                 @if (@Auth::check()) 
                     <li class="dropdown row">
@@ -56,7 +56,7 @@
                             <img src="{{ asset(Auth()->user()->avartar) }}" alt="avartar">
                         </div>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="{{ route('getprofile') }}">Profile</a>
                             <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>
                         </div>
                     </li>

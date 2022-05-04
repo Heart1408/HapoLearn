@@ -16,9 +16,3 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css/');
 
 mix.copy('resources/assets/images', 'public/images');
-// mix.copy('resources/assets/fonts', 'public/fonts');
-// mix.copy('node_modules/slick-carousel/slick', 'public/assets/slick');
-// mix.copy('node_modules/jquery/dist/jquery.min.js', 'public/assets/js');
-// mix.copy('node_modules/slick-carousel/slick/slick.min.js', 'public/assets/js');
-// mix.copy('node_modules/slick-carousel/slick/slick.css', 'public/assets/css');
-// mix.copy('node_modules/slick-carousel/slick/slick-theme.css', 'public/assets/css');

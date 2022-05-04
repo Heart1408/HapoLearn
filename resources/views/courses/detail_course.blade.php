@@ -106,7 +106,6 @@
                             <a class="leave-review-link" href="#">Leave a Review</a>
                             <div class="review-message m-3">
                                 <p class="title">Message</p>
-                                <input type="hidden" name="rating_value" class="rating_value">
                                 <input type="hidden" id="courseId" name="course_id" value="{{ $course->id }}">
                                 <textarea name="comment" id="comment" cols="30" rows="5" class="form-control mb-3"></textarea>
                                 <div class="vote-star d-flex align-items-center">
