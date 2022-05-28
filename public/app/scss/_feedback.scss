@@ -1,0 +1,157 @@
+.feedback {
+  font-family: $font-utm;
+  margin: 50px;
+}
+
+.feedback-title {
+  p {
+    font-size: 55px;
+    color: $color-text;
+    border-bottom: 4px solid $theme-color;
+    font-weight: bold;
+    line-height: 65px;
+    width: 225px;
+    margin: auto;
+  }
+}
+
+.feedback-desc {
+  width: 480px;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+.slick-initialized {
+  .slick-prev {
+    left: -5px;
+  }
+
+  .slick-next {
+    right: -5px;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50px;
+    border: none;
+    z-index: 2;
+    border-radius: 50px;
+    border: 1px solid #c4c4c4;
+    background-color: $white;
+
+    i {
+      padding: 6px 10px;
+      color: #969494;
+    }
+  }
+}
+
+.slick-slider {
+  margin: 0 50px;
+
+  .slick-item {
+    margin: 10px;
+  }
+}
+
+.slick-item-content {
+  position: relative;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+
+  .line {
+    border-left: 5px solid #d9dadc;
+    margin: 20px;
+    margin-right: 0;
+    height: 102px;
+  }
+
+  p {
+    color: #000000;
+    font-weight: normal;
+    margin: 20px;
+    padding-top: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    line-height: 25px;
+    height: 85px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.slick-item-content::after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  top: 142px;
+  left: 30px;
+  border-width: 12px;
+  border-color: rgb(202, 200, 200) transparent transparent transparent;
+  border-style: solid;
+}
+
+.slick-item-down {
+  display: flex;
+  margin: 30px 0;
+  margin-left: 35px;
+
+  .avatar {
+    width: 40px;
+    margin-right: 35px;
+  }
+}
+
+.profile {
+  .name {
+    font-size: 22px;
+    font-weight: bold;
+    color: $color-text;
+    margin: 0;
+    line-height: 20px;
+  }
+
+  .job {
+    margin: 0;
+    color: #000000;
+    line-height: 20px;
+    font-size: 18px;
+  }
+
+  .rating i {
+    color: #f2c54f;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .feedback {
+    margin: 30px 20px;
+  }
+
+  .feedback-title {
+    p {
+      font-size: 45px;
+      line-height: 50px;
+      width: 185px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .feedback {
+    margin: 30px 0;
+  }
+
+  .feedback-title {
+    p {
+      font-size: 40px;
+      width: 165px;
+    }
+  }
+}

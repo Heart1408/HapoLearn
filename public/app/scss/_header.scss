@@ -5,21 +5,21 @@
   nav {
     width: 100%;
   }
+}
 
-  nav .header-menu-list li {
-    display: inline-block;
-    line-height: 80px;
+.header-menu-list li {
+  display: inline-block;
+  line-height: 80px;
 
-    a {
-      @include a;
-    }
+  a {
+    @include a;
   }
 }
 
-nav .header-menu {
+.header-menu {
   display: flex;
 
-  .logo {
+  .header-logo {
     flex: 2;
 
     .logo-img {
@@ -34,16 +34,16 @@ nav .header-menu {
       height: 100%;
     }
   }
+}
 
-  .header-menu-list {
-    flex: 5;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 70px;
+.header-menu-list {
+  flex: 5;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
 
-    li {
-      margin: 0 15px;
-    }
+  li {
+    margin: 0 15px;
   }
 }
 
@@ -52,33 +52,33 @@ nav .header-menu {
 }
 
 @media (max-width: 1024px) {
-  nav .header-menu {
+  .header-menu {
     display: block;
 
-    .logo {
+    .header-logo {
       width: 280px;
       margin: auto;
     }
+  }
 
-    .header-menu-list {
-      display: flex;
-      width: 85%;
-      max-width: 700px;
-      margin: auto;
-      justify-content: space-between;
+  .header-menu-list {
+    display: flex;
+    width: 85%;
+    max-width: 700px;
+    margin: auto;
+    justify-content: space-between;
 
-      li {
-        margin: 0 5px;
-      }
+    li {
+      margin: 0 5px;
     }
   }
 }
 
 @media (max-width: 650px) {
-  nav .header-menu {
+  .header-menu {
     display: block;
 
-    .logo {
+    .header-logo {
       width: 240px;
       .logo-img {
         width: 180px;
@@ -88,7 +88,7 @@ nav .header-menu {
     }
   }
 
-  nav .header-menu .header-menu-list {
+  .header-menu-list {
     display: block;
     position: fixed;
     width: 100%;
@@ -117,7 +117,7 @@ nav .header-menu {
     }
   }
 
-  nav .header-menu .show-menu {
+  .header-menu .show-menu {
     left: 0;
   }
 
