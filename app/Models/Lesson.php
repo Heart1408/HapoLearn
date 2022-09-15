@@ -31,4 +31,13 @@ class Lesson extends Model
     {
         return $this->belongsTo(Course::class);
     }
+
+    public function scopeGetLessons($query, $data, $id)
+    {
+        $query->where('course_id', $id)->orderBy('course_id');
+        if (isset($data['search_key'])) {
+            $query->where('lessons.description', 'like', '%'. $data['search_key'] . '%');
+        }
+        return $query;
+    }
 }

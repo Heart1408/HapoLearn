@@ -10,7 +10,6 @@ use App\Models\Lesson;
 use App\Models\Tag;
 
 use App\Models\UserCourse;
-use Illuminate\Support\Facades\DB;
 
 class CourseController extends Controller
 {
@@ -21,5 +20,14 @@ class CourseController extends Controller
         $teachers = User::teacher()->get();
         $tags = Tag::get();
         return view('courses.index', compact('courses', 'teachers', 'tags'));
+    }
+
+    public function show($id, Request $request)
+    {
+        $data = $request->all();
+        $course = Course::with('teachers', 'reviews', 'tags')->find($id);
+        $otherCourses = Course::inRandomOrder()->take(config('course.random'))->get();
+        $lessons = Lesson::getLessons($data, $id)->paginate(config('course.pagination'));
+        return view('courses.detail_course', compact('course', 'lessons', 'otherCourses'));
     }
 }
