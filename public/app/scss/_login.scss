@@ -1,0 +1,156 @@
+.form-popup {
+  position: fixed;
+  background-color: rgba(48, 46, 46, 0.9);
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: $font-utm;
+  display: none;
+}
+
+.active-form {
+  display: block;
+  transition: 0.4;
+}
+
+.form {
+  position: relative;
+  background-color: $white;
+  width: 340px;
+  margin: auto;
+  margin-top: 100px;
+
+  .close-form {
+    position: absolute;
+    border: none;
+    font-size: 18px;
+    padding: 0 8px;
+    border-radius: 25px;
+    background-color: $theme-color;
+    color: $white;
+    right: -8px;
+    top: -8px;
+  }
+
+  .form-header {
+    display: flex;
+    button {
+      flex: 1;
+      border: 1px solid $theme-color;
+      background-color: $white;
+      color: $theme-color;
+      font-weight: bold;
+      padding: 8px;
+      font-size: 15px;
+    }
+  
+    .active {
+      background-color: $theme-color;
+      color: $white;
+    }
+  }
+}
+
+.form-container {
+  width: 85%;
+  margin: auto;
+
+  .textfield {
+    display: block;
+    color: $brown-color;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 15px;
+  }
+
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    border: 1px solid #E1E1E1;
+    background-color: #F2F2F2;
+    outline: none;
+    text-indent: 10px;
+    padding: 5px;
+  }
+
+  .roww {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 14px;
+
+    input[type=checkbox] {
+      background-color: $theme-color;
+    }
+
+    label {
+      color: $brown-color;
+    }
+
+    a {
+      color: $theme-color;
+    }
+  }
+
+  .submit-form-btn {
+    font-size: 12px;
+    padding: 6px 55px;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    @include button;
+  }
+
+  .line {
+    border-bottom: 1px solid #DBDBDB;
+    margin-top: 20px;
+  }
+
+  .login-width {
+    width: 80px;
+    text-align: center;
+    margin: auto;
+    margin-top: -12px;
+    margin-bottom: 20px;
+    color: $brown-color;
+    background-color: $white;
+    font-size: 14px;
+  }
+
+  .login-width-gg-btn,
+  .login-width-fb-btn {
+    display: inline-block;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 10px;
+    border: none;
+    color: $white;
+    font-size: 14px;
+
+    i {
+      font-size: 20px;
+      padding: 0 10px;
+    }
+  }
+
+  .login-width-gg-btn {
+    background-color: #DC4E41;
+  }
+
+  .login-width-fb-btn {
+    background-color: #3B5999;
+    margin-bottom: 30px;
+  }
+
+  .form-bottom {
+    height: 20px;
+  }
+}
+
+.register-form {
+  display: none;
+}
